@@ -9,3 +9,7 @@ test-results
 playwright-report
 /blob-report
 /playwright/.cache
+
+# Firebase / Google service config (use .env.local instead)
+google-services.json
+firebaseConfig.js
