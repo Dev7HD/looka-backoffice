@@ -1,0 +1,20 @@
+{
+  "liveMap": "خريطة مباشرة",
+  "activeRides": "الرحلات النشطة",
+  "recentOutcomes": "النتائج الأخيرة",
+  "noActive": "لا توجد رحلات نشطة",
+  "passengers": "الركاب",
+  "conn": {
+    "live": "مباشر",
+    "connecting": "إعادة الاتصال…",
+    "offline": "غير متصل"
+  },
+  "status": {
+    "PENDING": "قيد الانتظار",
+    "VALIDATED": "مُعتمد",
+    "IN_TOUR": "في جولة",
+    "COMPLETED": "مكتمل",
+    "CANCELLED": "ملغى",
+    "ABANDONED": "متروك"
+  }
+}

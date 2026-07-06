@@ -1,0 +1,20 @@
+{
+  "liveMap": "Mapa en vivo",
+  "activeRides": "Viajes activos",
+  "recentOutcomes": "Resultados recientes",
+  "noActive": "Sin viajes activos",
+  "passengers": "Pasajeros",
+  "conn": {
+    "live": "En vivo",
+    "connecting": "Reconectando…",
+    "offline": "Sin conexión"
+  },
+  "status": {
+    "PENDING": "Pendiente",
+    "VALIDATED": "Validado",
+    "IN_TOUR": "En ruta",
+    "COMPLETED": "Completado",
+    "CANCELLED": "Cancelado",
+    "ABANDONED": "Abandonado"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "generic": "Algo salió mal. Inténtelo de nuevo.",
+  "rateLimited": "Demasiadas solicitudes. Reduzca el ritmo y reintente.",
+  "unauthorized": "Su sesión expiró. Inicie sesión de nuevo.",
+  "forbidden": "No tiene permiso para realizar esta acción.",
+  "validation": "Algunos campos no son válidos. Revise y reintente.",
+  "insufficientPoints": "Puntos insuficientes para esta acción.",
+  "lockIllegalTransition": "Este bloqueo de depósito ya se liquidó.",
+  "lockNotFound": "Bloqueo de depósito no encontrado.",
+  "poiNotFound": "Este POI ya no existe.",
+  "rideIllegalTransition": "Ese cambio de viaje no está permitido ahora.",
+  "rideNotFound": "Este viaje ya no existe.",
+  "mediaNotFound": "Este medio ya no existe.",
+  "voiceInsufficientPoints": "Saldo demasiado bajo para iniciar una sesión de voz.",
+  "internal": "Error del servidor. Inténtelo más tarde."
+}

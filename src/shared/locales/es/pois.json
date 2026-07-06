@@ -1,0 +1,28 @@
+{
+  "title": "Editor de POI",
+  "draft": "Borrador",
+  "published": "Publicado",
+  "category": "Categoría",
+  "categories": {
+    "MONUMENT": "Monumento",
+    "MUSEUM": "Museo",
+    "VIEWPOINT": "Mirador",
+    "RESTAURANT": "Restaurante",
+    "PARK": "Parque",
+    "BEACH": "Playa",
+    "MARKET": "Mercado",
+    "RELIGIOUS_SITE": "Sitio religioso",
+    "OTHER": "Otro"
+  },
+  "name": "Nombre",
+  "namePlaceholder": "Nombre del POI en este idioma",
+  "description": "Descripción",
+  "descriptionPlaceholder": "Describe este lugar…",
+  "geofence": "Geocerca",
+  "mapHint_one": "{{count}} vértice · arrastra para remodelar, haz clic en un borde para añadir",
+  "mapHint_other": "{{count}} vértices · arrastra para remodelar, haz clic en un borde para añadir",
+  "allTranslated": "Todos los idiomas completos",
+  "missingTranslations": "Traducciones faltantes",
+  "saveDraft": "Guardar borrador",
+  "publish": "Publicar"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Ajustes",
+  "account": "Cuenta",
+  "preferences": "Preferencias",
+  "language": "Idioma de la interfaz",
+  "languageHint": "Se aplica de inmediato en toda la interfaz",
+  "theme": "Tema",
+  "themeHint": "Sistema sigue la apariencia de tu dispositivo",
+  "themeOption": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "roles": "Roles",
+  "save": "Guardar preferencias",
+  "saved": "Preferencias guardadas"
+}

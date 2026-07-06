@@ -1,0 +1,38 @@
+{
+  "title": "Ledger",
+  "readOnly": "Read-only — balances are backend-owned",
+  "summary": {
+    "escrowBalance": "Escrow balance",
+    "refundedToday": "Refunded today",
+    "topUpsToday": "Top-ups today",
+    "lockRetries": "Lock retries today",
+    "health": "Escrow health"
+  },
+  "health": {
+    "HEALTHY": "Healthy",
+    "WATCH": "Watch",
+    "CRITICAL": "Critical"
+  },
+  "transactions": "Transactions",
+  "filterAll": "All",
+  "type": {
+    "LOCK": "Lock",
+    "CAPTURE": "Capture",
+    "REFUND": "Refund",
+    "TOPUP": "Top-up",
+    "COMPENSATION": "Compensation"
+  },
+  "col": {
+    "txn": "TXN",
+    "type": "Type",
+    "ride": "Ride",
+    "partner": "Partner",
+    "amount": "Amount",
+    "balance": "Balance after",
+    "time": "Time"
+  },
+  "empty": "No transactions",
+  "page": "Page {{page}} of {{pages}}",
+  "prev": "Previous",
+  "next": "Next"
+}

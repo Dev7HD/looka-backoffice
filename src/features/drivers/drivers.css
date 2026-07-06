@@ -1,0 +1,53 @@
+.drivers {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+.drivers__filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.drivers__filters .chip {
+  cursor: pointer;
+  border: none;
+}
+.drivers__total {
+  font-size: var(--fs-13);
+  font-weight: var(--fw-bold);
+  color: var(--c-ink-soft);
+}
+.drv__name {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.drv__phone {
+  font-size: var(--fs-11);
+  color: var(--c-ink-soft);
+}
+.drv__status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.drv__ride {
+  font-size: var(--fs-11);
+  color: var(--c-brass);
+}
+.drivers__pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-block-start: var(--border-hairline);
+}
+.drivers__page {
+  font-size: var(--fs-12);
+  color: var(--c-ink-soft);
+}
+.drivers__pager-btns {
+  display: flex;
+  gap: var(--space-2);
+}

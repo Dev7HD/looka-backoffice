@@ -1,0 +1,28 @@
+{
+  "title": "Éditeur de POI",
+  "draft": "Brouillon",
+  "published": "Publié",
+  "category": "Catégorie",
+  "categories": {
+    "MONUMENT": "Monument",
+    "MUSEUM": "Musée",
+    "VIEWPOINT": "Point de vue",
+    "RESTAURANT": "Restaurant",
+    "PARK": "Parc",
+    "BEACH": "Plage",
+    "MARKET": "Marché",
+    "RELIGIOUS_SITE": "Site religieux",
+    "OTHER": "Autre"
+  },
+  "name": "Nom",
+  "namePlaceholder": "Nom du POI dans cette langue",
+  "description": "Description",
+  "descriptionPlaceholder": "Décrivez ce lieu…",
+  "geofence": "Géo-barrière",
+  "mapHint_one": "{{count}} sommet · glissez pour remodeler, cliquez une arête pour ajouter",
+  "mapHint_other": "{{count}} sommets · glissez pour remodeler, cliquez une arête pour ajouter",
+  "allTranslated": "Toutes les langues complètes",
+  "missingTranslations": "Traductions manquantes",
+  "saveDraft": "Enregistrer le brouillon",
+  "publish": "Publier"
+}

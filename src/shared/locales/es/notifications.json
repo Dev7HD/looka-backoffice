@@ -1,0 +1,27 @@
+{
+  "title": "Notificaciones",
+  "description": "Reciba alertas operativas en este navegador.",
+  "enable": "Activar notificaciones",
+  "enabled": "Notificaciones activadas",
+  "busy": "Activando…",
+  "blocked": "Las notificaciones están bloqueadas en el navegador.",
+  "unsupported": "Las notificaciones push no están configuradas.",
+  "devices": "Dispositivos registrados",
+  "thisDevice": "Este navegador",
+  "remove": "Quitar",
+  "noDevices": "No hay dispositivos registrados.",
+  "newAlert": "Nueva alerta",
+  "webPush": "Push web",
+  "subscriptions": "Suscripciones de alertas",
+  "category": "Categoría",
+  "channel": {
+    "PUSH": "Push",
+    "EMAIL": "Correo"
+  },
+  "category_v": {
+    "RIDES": "Viajes",
+    "TOURS": "Circuitos",
+    "PROMOTIONS": "Promociones",
+    "WALLET": "Monedero"
+  }
+}

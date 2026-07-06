@@ -1,0 +1,27 @@
+{
+  "title": "Conductores",
+  "filterAll": "Todos",
+  "status": {
+    "ONLINE": "En línea",
+    "ON_RIDE": "En viaje",
+    "OFFLINE": "Desconectado",
+    "SUSPENDED": "Suspendido"
+  },
+  "col": {
+    "id": "ID",
+    "name": "Conductor",
+    "vehicle": "Vehículo",
+    "city": "Ciudad",
+    "status": "Estado",
+    "rating": "Valoración",
+    "rides": "Viajes hoy",
+    "actions": "Acciones"
+  },
+  "empty": "Sin conductores",
+  "suspend": "Suspender",
+  "reactivate": "Reactivar",
+  "onRide": "En {{ride}}",
+  "page": "Página {{page}} de {{pages}}",
+  "prev": "Anterior",
+  "next": "Siguiente"
+}

@@ -1,0 +1,54 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  height: var(--control-sm);
+  padding-inline: var(--space-3);
+  border-radius: var(--r-pill);
+  font-size: var(--fs-12);
+  font-weight: var(--fw-medium);
+  line-height: 1;
+  white-space: nowrap;
+}
+.chip--sm {
+  height: 24px;
+  padding-inline: var(--space-2);
+  font-size: var(--fs-11);
+}
+
+/* Leading status dot (optional) */
+.chip__dot {
+  inline-size: 8px;
+  block-size: 8px;
+  border-radius: var(--r-pill);
+  background: currentColor;
+  flex: none;
+}
+
+/* Tonal intents — soft fill, saturated ink via currentColor */
+.chip--neutral {
+  background: var(--c-paper);
+  color: var(--c-ink-soft);
+  box-shadow: inset 0 0 0 1px var(--c-line);
+}
+.chip--primary {
+  background: var(--c-primary-soft);
+  color: var(--c-primary);
+}
+.chip--success {
+  background: #e0f0eb;
+  color: var(--c-success);
+}
+.chip--warning,
+.chip--brass {
+  background: var(--c-brass-soft);
+  color: var(--c-brass);
+}
+.chip--info {
+  background: #e4eef7;
+  color: var(--c-info);
+}
+.chip--critical {
+  background: #f7e3df;
+  color: var(--c-critical);
+}

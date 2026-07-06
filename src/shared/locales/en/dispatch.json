@@ -1,0 +1,20 @@
+{
+  "liveMap": "Live map",
+  "activeRides": "Active rides",
+  "recentOutcomes": "Recent outcomes",
+  "noActive": "No active rides",
+  "passengers": "Passengers",
+  "conn": {
+    "live": "Live",
+    "connecting": "Reconnecting…",
+    "offline": "Offline"
+  },
+  "status": {
+    "PENDING": "Pending",
+    "VALIDATED": "Validated",
+    "IN_TOUR": "In tour",
+    "COMPLETED": "Completed",
+    "CANCELLED": "Cancelled",
+    "ABANDONED": "Abandoned"
+  }
+}

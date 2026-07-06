@@ -1,0 +1,109 @@
+.login {
+  min-block-size: 100vh;
+  display: grid;
+  place-items: center;
+  padding: var(--space-6);
+  background: var(--c-sidebar);
+}
+.login__top {
+  position: fixed;
+  inset-block-start: var(--space-5);
+  inset-inline-end: var(--space-5);
+}
+.login__card {
+  inline-size: 100%;
+  max-inline-size: 400px;
+  background: var(--c-surface);
+  border-radius: var(--r-lg);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-pop);
+}
+.login__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.login__mark {
+  display: grid;
+  place-items: center;
+  inline-size: 40px;
+  block-size: 40px;
+  border-radius: var(--r-sm);
+  background: var(--c-brass);
+  color: var(--c-ink);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-22);
+}
+.login__word {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-18);
+  color: var(--c-ink);
+}
+.login__lede {
+  margin-block: var(--space-4) var(--space-6);
+  color: var(--c-ink-soft);
+}
+.login__pick {
+  margin-block-end: var(--space-3);
+}
+.login__personas {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.persona {
+  inline-size: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border: var(--border-hairline);
+  border-radius: var(--r-md);
+  text-align: start;
+  transition: background var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out);
+}
+.persona:hover {
+  background: var(--c-primary-soft);
+  border-color: var(--c-primary);
+}
+.persona__avatar {
+  display: grid;
+  place-items: center;
+  inline-size: 36px;
+  block-size: 36px;
+  border-radius: var(--r-pill);
+  background: var(--c-primary);
+  color: var(--c-on-primary);
+  font-size: var(--fs-12);
+  font-weight: var(--fw-bold);
+  flex: none;
+}
+.persona__meta {
+  display: flex;
+  flex-direction: column;
+}
+.persona__name {
+  font-size: var(--fs-14);
+  font-weight: var(--fw-medium);
+  color: var(--c-ink);
+}
+.persona__role {
+  font-size: var(--fs-12);
+  color: var(--c-ink-soft);
+}
+.login__note {
+  margin-block-start: var(--space-5);
+  font-size: var(--fs-12);
+  color: var(--c-ink-soft);
+  text-align: center;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  text-align: start;
+}

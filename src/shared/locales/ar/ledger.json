@@ -1,0 +1,38 @@
+{
+  "title": "دفتر الحسابات",
+  "readOnly": "للقراءة فقط — الأرصدة يديرها الخادم",
+  "summary": {
+    "escrowBalance": "رصيد الضمان",
+    "refundedToday": "المُسترد اليوم",
+    "topUpsToday": "الشحنات اليوم",
+    "lockRetries": "محاولات الحجز اليوم",
+    "health": "صحة الضمان"
+  },
+  "health": {
+    "HEALTHY": "سليم",
+    "WATCH": "مراقبة",
+    "CRITICAL": "حرج"
+  },
+  "transactions": "المعاملات",
+  "filterAll": "الكل",
+  "type": {
+    "LOCK": "حجز",
+    "CAPTURE": "تحصيل",
+    "REFUND": "استرداد",
+    "TOPUP": "شحن",
+    "COMPENSATION": "تعويض"
+  },
+  "col": {
+    "txn": "المعاملة",
+    "type": "النوع",
+    "ride": "الرحلة",
+    "partner": "الشريك",
+    "amount": "المبلغ",
+    "balance": "الرصيد بعد",
+    "time": "الوقت"
+  },
+  "empty": "لا توجد معاملات",
+  "page": "صفحة {{page}} من {{pages}}",
+  "prev": "السابق",
+  "next": "التالي"
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Grand livre",
+  "readOnly": "Lecture seule — les soldes sont gérés par le backend",
+  "summary": {
+    "escrowBalance": "Solde séquestre",
+    "refundedToday": "Remboursé aujourd'hui",
+    "topUpsToday": "Recharges aujourd'hui",
+    "lockRetries": "Reprises de blocage aujourd'hui",
+    "health": "Santé du séquestre"
+  },
+  "health": {
+    "HEALTHY": "Sain",
+    "WATCH": "À surveiller",
+    "CRITICAL": "Critique"
+  },
+  "transactions": "Transactions",
+  "filterAll": "Toutes",
+  "type": {
+    "LOCK": "Blocage",
+    "CAPTURE": "Capture",
+    "REFUND": "Remboursement",
+    "TOPUP": "Recharge",
+    "COMPENSATION": "Compensation"
+  },
+  "col": {
+    "txn": "TXN",
+    "type": "Type",
+    "ride": "Course",
+    "partner": "Partenaire",
+    "amount": "Montant",
+    "balance": "Solde après",
+    "time": "Heure"
+  },
+  "empty": "Aucune transaction",
+  "page": "Page {{page}} sur {{pages}}",
+  "prev": "Précédent",
+  "next": "Suivant"
+}

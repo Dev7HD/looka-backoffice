@@ -1,0 +1,27 @@
+{
+  "title": "Chauffeurs",
+  "filterAll": "Tous",
+  "status": {
+    "ONLINE": "En ligne",
+    "ON_RIDE": "En course",
+    "OFFLINE": "Hors ligne",
+    "SUSPENDED": "Suspendu"
+  },
+  "col": {
+    "id": "ID",
+    "name": "Chauffeur",
+    "vehicle": "Véhicule",
+    "city": "Ville",
+    "status": "Statut",
+    "rating": "Note",
+    "rides": "Courses aujourd'hui",
+    "actions": "Actions"
+  },
+  "empty": "Aucun chauffeur",
+  "suspend": "Suspendre",
+  "reactivate": "Réactiver",
+  "onRide": "Sur {{ride}}",
+  "page": "Page {{page}} sur {{pages}}",
+  "prev": "Précédent",
+  "next": "Suivant"
+}

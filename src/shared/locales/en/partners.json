@@ -1,0 +1,44 @@
+{
+  "queue": "Review queue",
+  "selectPrompt": "Select a partner to review",
+  "noPartners": "No partners in this queue",
+  "submitted": "Submitted",
+  "pendingDocs_one": "{{count}} doc pending",
+  "pendingDocs_other": "{{count}} docs pending",
+  "status": {
+    "PENDING": "Pending review",
+    "CHANGES_REQUESTED": "Changes requested",
+    "VERIFIED": "Verified",
+    "REJECTED": "Rejected"
+  },
+  "contact": "Contact",
+  "contactName": "Contact name",
+  "email": "Email",
+  "phone": "Phone",
+  "address": "Address",
+  "catalog": "Catalog",
+  "catalogCount_one": "{{count}} listing",
+  "catalogCount_other": "{{count}} listings",
+  "kyc": "KYC documents",
+  "docType": {
+    "REGISTRATION": "Business registration",
+    "LICENSE": "Touristic license",
+    "ID": "Owner ID",
+    "BANK": "Bank details"
+  },
+  "docStatus": {
+    "PENDING": "Pending",
+    "VERIFIED": "Verified",
+    "REJECTED": "Rejected"
+  },
+  "verifyDoc": "Verify",
+  "rejectDoc": "Reject",
+  "actions": {
+    "approve": "Approve partner",
+    "requestChanges": "Request changes",
+    "reject": "Reject"
+  },
+  "note": "Reviewer note",
+  "notePlaceholder": "Optional note to the partner…",
+  "blockedByDocs": "Verify all documents before approving"
+}

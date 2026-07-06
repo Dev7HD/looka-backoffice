@@ -1,0 +1,17 @@
+{
+  "title": "Settings",
+  "account": "Account",
+  "preferences": "Preferences",
+  "language": "Interface language",
+  "languageHint": "Applies immediately across the interface",
+  "theme": "Theme",
+  "themeHint": "System follows your device appearance",
+  "themeOption": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "roles": "Roles",
+  "save": "Save preferences",
+  "saved": "Preferences saved"
+}

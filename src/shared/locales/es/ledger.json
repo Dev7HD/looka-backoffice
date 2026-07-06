@@ -1,0 +1,38 @@
+{
+  "title": "Libro mayor",
+  "readOnly": "Solo lectura — los saldos los gestiona el backend",
+  "summary": {
+    "escrowBalance": "Saldo en depósito",
+    "refundedToday": "Reembolsado hoy",
+    "topUpsToday": "Recargas hoy",
+    "lockRetries": "Reintentos de bloqueo hoy",
+    "health": "Salud del depósito"
+  },
+  "health": {
+    "HEALTHY": "Saludable",
+    "WATCH": "Vigilar",
+    "CRITICAL": "Crítico"
+  },
+  "transactions": "Transacciones",
+  "filterAll": "Todas",
+  "type": {
+    "LOCK": "Bloqueo",
+    "CAPTURE": "Captura",
+    "REFUND": "Reembolso",
+    "TOPUP": "Recarga",
+    "COMPENSATION": "Compensación"
+  },
+  "col": {
+    "txn": "TXN",
+    "type": "Tipo",
+    "ride": "Viaje",
+    "partner": "Socio",
+    "amount": "Importe",
+    "balance": "Saldo después",
+    "time": "Hora"
+  },
+  "empty": "Sin transacciones",
+  "page": "Página {{page}} de {{pages}}",
+  "prev": "Anterior",
+  "next": "Siguiente"
+}

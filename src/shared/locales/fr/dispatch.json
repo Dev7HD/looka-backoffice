@@ -1,0 +1,20 @@
+{
+  "liveMap": "Carte en direct",
+  "activeRides": "Courses actives",
+  "recentOutcomes": "Résultats récents",
+  "noActive": "Aucune course active",
+  "passengers": "Passagers",
+  "conn": {
+    "live": "En direct",
+    "connecting": "Reconnexion…",
+    "offline": "Hors ligne"
+  },
+  "status": {
+    "PENDING": "En attente",
+    "VALIDATED": "Validée",
+    "IN_TOUR": "En tournée",
+    "COMPLETED": "Terminée",
+    "CANCELLED": "Annulée",
+    "ABANDONED": "Abandonnée"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "title": "POI editor",
+  "draft": "Draft",
+  "published": "Published",
+  "category": "Category",
+  "categories": {
+    "MONUMENT": "Monument",
+    "MUSEUM": "Museum",
+    "VIEWPOINT": "Viewpoint",
+    "RESTAURANT": "Restaurant",
+    "PARK": "Park",
+    "BEACH": "Beach",
+    "MARKET": "Market",
+    "RELIGIOUS_SITE": "Religious site",
+    "OTHER": "Other"
+  },
+  "name": "Name",
+  "namePlaceholder": "POI name in this language",
+  "description": "Description",
+  "descriptionPlaceholder": "Describe this place…",
+  "geofence": "Geofence",
+  "mapHint_one": "{{count}} vertex · drag to reshape, click an edge to add",
+  "mapHint_other": "{{count}} vertices · drag to reshape, click an edge to add",
+  "allTranslated": "All languages complete",
+  "missingTranslations": "Missing translations",
+  "saveDraft": "Save draft",
+  "publish": "Publish"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Modération des médias",
+  "filterAll": "Tous",
+  "status": {
+    "PENDING": "En attente",
+    "APPROVED": "Approuvé",
+    "REJECTED": "Rejeté"
+  },
+  "type": {
+    "IMAGE": "Image",
+    "AUDIO": "Audio"
+  },
+  "by": "Par {{partner}}",
+  "empty": "Aucun média dans cette file",
+  "approve": "Approuver",
+  "reject": "Rejeter",
+  "duration": "{{sec}} s"
+}

@@ -1,0 +1,95 @@
+.topbar {
+  grid-area: topbar;
+  block-size: var(--topbar-h);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding-inline: var(--space-6);
+  background: var(--c-surface);
+  border-block-end: var(--border-hairline);
+  position: sticky;
+  inset-block-start: 0;
+  z-index: var(--z-topbar);
+}
+.topbar__title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--fs-22);
+  color: var(--c-ink);
+  white-space: nowrap;
+}
+
+.topbar__search {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex: 1;
+  max-inline-size: 420px;
+  margin-inline-start: var(--space-4);
+  padding-inline: var(--space-3);
+  block-size: var(--control-sm);
+  background: var(--c-paper);
+  border: var(--border-hairline);
+  border-radius: var(--r-pill);
+  color: var(--c-ink-soft);
+}
+.topbar__search:focus-within {
+  border-color: var(--c-primary);
+}
+.topbar__search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: var(--fs-13);
+  color: var(--c-ink);
+  outline: none;
+}
+
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-inline-start: auto;
+}
+.topbar__admin {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-block: var(--space-1);
+  padding-inline-start: var(--space-1);
+  padding-inline-end: var(--space-3);
+  border: var(--border-hairline);
+  border-radius: var(--r-pill);
+  background: var(--c-surface);
+}
+.topbar__admin:hover {
+  background: var(--c-paper);
+}
+.topbar__avatar {
+  display: grid;
+  place-items: center;
+  inline-size: 28px;
+  block-size: 28px;
+  border-radius: var(--r-pill);
+  background: var(--c-primary);
+  color: var(--c-on-primary);
+  font-size: var(--fs-11);
+  font-weight: var(--fw-bold);
+}
+.topbar__admin-name {
+  font-size: var(--fs-13);
+  font-weight: var(--fw-medium);
+}
+.topbar__signout {
+  display: grid;
+  place-items: center;
+  inline-size: var(--control-sm);
+  block-size: var(--control-sm);
+  border: var(--border-hairline);
+  border-radius: var(--r-pill);
+  color: var(--c-ink-soft);
+}
+.topbar__signout:hover {
+  background: var(--c-paper);
+  color: var(--c-critical);
+}

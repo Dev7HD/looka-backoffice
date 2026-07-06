@@ -1,0 +1,16 @@
+{
+  "generic": "Une erreur est survenue. Veuillez réessayer.",
+  "rateLimited": "Trop de requêtes. Ralentissez et réessayez.",
+  "unauthorized": "Votre session a expiré. Veuillez vous reconnecter.",
+  "forbidden": "Vous n’avez pas la permission d’effectuer cette action.",
+  "validation": "Certains champs sont invalides. Vérifiez et réessayez.",
+  "insufficientPoints": "Points insuffisants pour cette action.",
+  "lockIllegalTransition": "Ce blocage de séquestre a déjà été réglé.",
+  "lockNotFound": "Blocage de séquestre introuvable.",
+  "poiNotFound": "Ce POI n’existe plus.",
+  "rideIllegalTransition": "Cette modification de course n’est pas autorisée.",
+  "rideNotFound": "Cette course n’existe plus.",
+  "mediaNotFound": "Ce média n’existe plus.",
+  "voiceInsufficientPoints": "Solde trop faible pour démarrer une session vocale.",
+  "internal": "Erreur serveur. Réessayez plus tard."
+}

@@ -1,0 +1,27 @@
+{
+  "title": "السائقون",
+  "filterAll": "الكل",
+  "status": {
+    "ONLINE": "متصل",
+    "ON_RIDE": "في رحلة",
+    "OFFLINE": "غير متصل",
+    "SUSPENDED": "موقوف"
+  },
+  "col": {
+    "id": "المعرّف",
+    "name": "السائق",
+    "vehicle": "المركبة",
+    "city": "المدينة",
+    "status": "الحالة",
+    "rating": "التقييم",
+    "rides": "رحلات اليوم",
+    "actions": "إجراءات"
+  },
+  "empty": "لا يوجد سائقون",
+  "suspend": "إيقاف",
+  "reactivate": "إعادة تفعيل",
+  "onRide": "على {{ride}}",
+  "page": "صفحة {{page}} من {{pages}}",
+  "prev": "السابق",
+  "next": "التالي"
+}

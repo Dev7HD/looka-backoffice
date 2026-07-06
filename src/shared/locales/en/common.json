@@ -1,0 +1,18 @@
+{
+  "app": "Loüka · Admin",
+  "search": "Search…",
+  "save": "Save",
+  "cancel": "Cancel",
+  "approve": "Approve",
+  "reject": "Reject",
+  "loading": "Loading…",
+  "empty": "No data",
+  "language": "Language",
+  "signOut": "Sign out",
+  "readOnly": "Read-only access — you can view but not act",
+  "retry": "Try again",
+  "errorTitle": "Something went wrong",
+  "errorMsg": "The screen failed to load. Please try again.",
+  "showPassword": "Show password",
+  "hidePassword": "Hide password"
+}

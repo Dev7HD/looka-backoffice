@@ -1,0 +1,27 @@
+{
+  "title": "Notifications",
+  "description": "Receive operational alerts in this browser.",
+  "enable": "Enable notifications",
+  "enabled": "Notifications enabled",
+  "busy": "Enabling…",
+  "blocked": "Notifications are blocked in your browser settings.",
+  "unsupported": "Push notifications are not configured.",
+  "devices": "Registered devices",
+  "thisDevice": "This browser",
+  "remove": "Remove",
+  "noDevices": "No devices registered.",
+  "newAlert": "New alert",
+  "webPush": "Web push",
+  "subscriptions": "Alert subscriptions",
+  "category": "Category",
+  "channel": {
+    "PUSH": "Push",
+    "EMAIL": "Email"
+  },
+  "category_v": {
+    "RIDES": "Rides",
+    "TOURS": "Tours",
+    "PROMOTIONS": "Promotions",
+    "WALLET": "Wallet"
+  }
+}

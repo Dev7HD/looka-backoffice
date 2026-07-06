@@ -1,0 +1,150 @@
+/* =============================================================================
+   Loüka · Admin — Design Tokens
+   Single source of truth for the CSS system. Mirrors ../design/tokens/*.
+   Consume these variables only; never hardcode hex / px in components.
+   ============================================================================= */
+:root {
+  /* --- Brand palette ------------------------------------------------------ */
+  --c-primary: #146955;
+  --c-primary-soft: #e3f0ea;
+  --c-brass: #c08a2d;
+  --c-brass-soft: #f5ebd8;
+
+  /* --- Ink / ground ------------------------------------------------------- */
+  --c-ink: #1a2e2a; /* primary text, dark surfaces */
+  --c-ink-soft: #4a5f58; /* secondary text */
+  --c-paper: #f6f8f5; /* app background */
+  --c-surface: #ffffff; /* cards, panels */
+  --c-line: #dce4df; /* borders, dividers */
+
+  /* --- Status / feedback -------------------------------------------------- */
+  --c-success: #1e8a6e;
+  --c-warning: #c08a2d;
+  --c-info: #2d6fa8;
+  --c-critical: #c4402f;
+
+  /* --- Semantic surfaces -------------------------------------------------- */
+  --c-sidebar: #1a2e2a;
+  --c-sidebar-accent: #1c3b33;
+  --c-sidebar-text: #f6f8f5;
+  --c-sidebar-text-soft: #9db3ac;
+
+  /* Text-on-color (for filled buttons / pills) */
+  --c-on-primary: #ffffff;
+  --c-on-ink: #f6f8f5;
+
+  /* Focus ring — WCAG AA visible keyboard focus */
+  --c-focus: #2d6fa8;
+
+  /* --- Ride terminal-state colors (shared vocab w/ backend + mobile) ------ */
+  --c-ride-pending: var(--c-info);
+  --c-ride-validated: var(--c-primary);
+  --c-ride-in-tour: var(--c-brass);
+  --c-ride-completed: var(--c-success);
+  --c-ride-cancelled: var(--c-ink-soft); /* muted — full refund */
+  --c-ride-abandoned: var(--c-critical); /* critical — points consumed */
+
+  /* --- Typography --------------------------------------------------------- */
+  --font-ui: "Public Sans", -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    Roboto, "Segoe UI", system-ui, sans-serif;
+  --font-display: "Lora", "Palatino", "Book Antiqua", Georgia, serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --fs-11: 11px;
+  --fs-12: 12px;
+  --fs-13: 13px; /* table / control default */
+  --fs-14: 14px;
+  --fs-15: 15px; /* body */
+  --fs-16: 16px;
+  --fs-18: 18px;
+  --fs-22: 22px;
+  --fs-28: 28px; /* display / page title */
+
+  --fw-regular: 400;
+  --fw-medium: 600;
+  --fw-semibold: 650;
+  --fw-bold: 700;
+
+  --lh-tight: 1.2;
+  --lh-body: 1.5;
+  --tracking-caps: 0.06em; /* eyebrow / all-caps labels */
+
+  /* --- Spacing scale (4px base) ------------------------------------------ */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* --- Radius ------------------------------------------------------------- */
+  --r-sm: 8px;
+  --r-md: 14px; /* cards */
+  --r-lg: 22px;
+  --r-pill: 999px; /* buttons, chips, badges */
+
+  /* --- Control heights ---------------------------------------------------- */
+  --control-sm: 32px;
+  --control-md: 44px;
+  --control-lg: 52px;
+
+  /* --- Elevation ---------------------------------------------------------- */
+  --shadow-1: 0 1px 3px rgba(26, 46, 42, 0.25);
+  --shadow-2: 0 2px 6px rgba(26, 46, 42, 0.3);
+  --shadow-pop: 0 8px 24px rgba(26, 46, 42, 0.18);
+
+  /* --- Borders ------------------------------------------------------------ */
+  --border-hairline: 1px solid var(--c-line);
+
+  /* --- Layout ------------------------------------------------------------- */
+  --sidebar-w: 220px;
+  --topbar-h: 64px;
+  --content-max: 1280px;
+
+  /* --- Motion ------------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+
+  /* --- Z-index ------------------------------------------------------------ */
+  --z-sidebar: 100;
+  --z-topbar: 90;
+  --z-dropdown: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+}
+
+/* =============================================================================
+   Dark theme — overrides applied via <html data-theme="dark">.
+   Only ground/ink/line + on-color values flip; brand hues stay recognizable.
+   ============================================================================= */
+html[data-theme="dark"] {
+  --c-primary: #3aa588;
+  --c-primary-soft: #163f35;
+  --c-brass: #d0a24a;
+  --c-brass-soft: #3a3016;
+
+  --c-ink: #eaf2ee; /* primary text on dark ground */
+  --c-ink-soft: #9fb4ad;
+  --c-paper: #0f1f1b;
+  --c-surface: #16302a;
+  --c-line: #26433c;
+
+  --c-success: #35b08e;
+  --c-warning: #d0a24a;
+  --c-info: #4d94cf;
+  --c-critical: #e0664f;
+
+  --c-on-primary: #0f1f1b;
+  --c-focus: #4d94cf;
+
+  --shadow-1: 0 1px 3px rgba(0, 0, 0, 0.5);
+  --shadow-2: 0 2px 6px rgba(0, 0, 0, 0.55);
+  --shadow-pop: 0 8px 24px rgba(0, 0, 0, 0.5);
+
+  color-scheme: dark;
+}

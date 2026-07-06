@@ -1,0 +1,44 @@
+{
+  "queue": "قائمة المراجعة",
+  "selectPrompt": "اختر شريكًا للمراجعة",
+  "noPartners": "لا يوجد شركاء في هذه القائمة",
+  "submitted": "أُرسل في",
+  "pendingDocs_one": "مستند واحد قيد الانتظار",
+  "pendingDocs_other": "{{count}} مستندات قيد الانتظار",
+  "status": {
+    "PENDING": "قيد المراجعة",
+    "CHANGES_REQUESTED": "طُلبت تعديلات",
+    "VERIFIED": "موثّق",
+    "REJECTED": "مرفوض"
+  },
+  "contact": "جهة الاتصال",
+  "contactName": "اسم جهة الاتصال",
+  "email": "البريد الإلكتروني",
+  "phone": "الهاتف",
+  "address": "العنوان",
+  "catalog": "الكتالوج",
+  "catalogCount_one": "عرض واحد",
+  "catalogCount_other": "{{count}} عروض",
+  "kyc": "مستندات اعرف عميلك",
+  "docType": {
+    "REGISTRATION": "السجل التجاري",
+    "LICENSE": "الرخصة السياحية",
+    "ID": "هوية المالك",
+    "BANK": "التفاصيل المصرفية"
+  },
+  "docStatus": {
+    "PENDING": "قيد الانتظار",
+    "VERIFIED": "موثّق",
+    "REJECTED": "مرفوض"
+  },
+  "verifyDoc": "توثيق",
+  "rejectDoc": "رفض",
+  "actions": {
+    "approve": "الموافقة على الشريك",
+    "requestChanges": "طلب تعديلات",
+    "reject": "رفض"
+  },
+  "note": "ملاحظة المراجع",
+  "notePlaceholder": "ملاحظة اختيارية للشريك…",
+  "blockedByDocs": "وثّق جميع المستندات قبل الموافقة"
+}

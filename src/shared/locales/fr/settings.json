@@ -1,0 +1,17 @@
+{
+  "title": "Paramètres",
+  "account": "Compte",
+  "preferences": "Préférences",
+  "language": "Langue de l'interface",
+  "languageHint": "S'applique immédiatement à toute l'interface",
+  "theme": "Thème",
+  "themeHint": "Système suit l'apparence de votre appareil",
+  "themeOption": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "system": "Système"
+  },
+  "roles": "Rôles",
+  "save": "Enregistrer les préférences",
+  "saved": "Préférences enregistrées"
+}

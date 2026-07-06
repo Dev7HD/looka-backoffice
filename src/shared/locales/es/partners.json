@@ -1,0 +1,44 @@
+{
+  "queue": "Cola de revisión",
+  "selectPrompt": "Seleccione un socio para revisar",
+  "noPartners": "No hay socios en esta cola",
+  "submitted": "Enviado",
+  "pendingDocs_one": "{{count}} doc pendiente",
+  "pendingDocs_other": "{{count}} docs pendientes",
+  "status": {
+    "PENDING": "Pendiente de revisión",
+    "CHANGES_REQUESTED": "Cambios solicitados",
+    "VERIFIED": "Verificado",
+    "REJECTED": "Rechazado"
+  },
+  "contact": "Contacto",
+  "contactName": "Nombre de contacto",
+  "email": "Correo",
+  "phone": "Teléfono",
+  "address": "Dirección",
+  "catalog": "Catálogo",
+  "catalogCount_one": "{{count}} anuncio",
+  "catalogCount_other": "{{count}} anuncios",
+  "kyc": "Documentos KYC",
+  "docType": {
+    "REGISTRATION": "Registro mercantil",
+    "LICENSE": "Licencia turística",
+    "ID": "Identificación del titular",
+    "BANK": "Datos bancarios"
+  },
+  "docStatus": {
+    "PENDING": "Pendiente",
+    "VERIFIED": "Verificado",
+    "REJECTED": "Rechazado"
+  },
+  "verifyDoc": "Verificar",
+  "rejectDoc": "Rechazar",
+  "actions": {
+    "approve": "Aprobar socio",
+    "requestChanges": "Solicitar cambios",
+    "reject": "Rechazar"
+  },
+  "note": "Nota del revisor",
+  "notePlaceholder": "Nota opcional para el socio…",
+  "blockedByDocs": "Verifique todos los documentos antes de aprobar"
+}

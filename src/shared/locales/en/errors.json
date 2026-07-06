@@ -1,0 +1,16 @@
+{
+  "generic": "Something went wrong. Please try again.",
+  "rateLimited": "Too many requests. Please slow down and retry.",
+  "unauthorized": "Your session expired. Please sign in again.",
+  "forbidden": "You do not have permission to do this.",
+  "validation": "Some fields are invalid. Please check and retry.",
+  "insufficientPoints": "Not enough points for this action.",
+  "lockIllegalTransition": "This escrow lock was already settled.",
+  "lockNotFound": "Escrow lock not found.",
+  "poiNotFound": "This POI no longer exists.",
+  "rideIllegalTransition": "That ride change is not allowed right now.",
+  "rideNotFound": "This ride no longer exists.",
+  "mediaNotFound": "This media no longer exists.",
+  "voiceInsufficientPoints": "Balance too low to start a voice session.",
+  "internal": "Server error. Please try again later."
+}

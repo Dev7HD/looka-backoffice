@@ -1,0 +1,73 @@
+/* Global base — applies tokens to the document. */
+body {
+  font-family: var(--font-ui);
+  font-size: var(--fs-15);
+  line-height: var(--lh-body);
+  font-weight: var(--fw-regular);
+  color: var(--c-ink);
+  background: var(--c-paper);
+}
+
+/* Accessible, visible keyboard focus everywhere (WCAG AA). */
+:focus-visible {
+  outline: 2px solid var(--c-focus);
+  outline-offset: 2px;
+  border-radius: var(--r-sm);
+}
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Numeric alignment: IDs / amounts stay mono + tabular. */
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* All-caps eyebrow label. */
+.eyebrow {
+  font-size: var(--fs-12);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--tracking-caps);
+  text-transform: uppercase;
+  color: var(--c-ink-soft);
+}
+
+/* Display face for page titles. */
+.display {
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+/* Auth guard states — always available regardless of route. */
+.auth-splash {
+  min-block-size: 100vh;
+  display: grid;
+  place-items: center;
+  color: var(--c-ink-soft);
+  background: var(--c-paper);
+}
+.forbidden {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-10) var(--space-6);
+  text-align: center;
+  align-items: center;
+}
+.forbidden__msg {
+  color: var(--c-ink-soft);
+  max-inline-size: 40ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

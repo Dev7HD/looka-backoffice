@@ -1,0 +1,28 @@
+{
+  "title": "محرّر نقاط الاهتمام",
+  "draft": "مسودة",
+  "published": "منشور",
+  "category": "الفئة",
+  "categories": {
+    "MONUMENT": "معلم",
+    "MUSEUM": "متحف",
+    "VIEWPOINT": "نقطة مشاهدة",
+    "RESTAURANT": "مطعم",
+    "PARK": "حديقة",
+    "BEACH": "شاطئ",
+    "MARKET": "سوق",
+    "RELIGIOUS_SITE": "موقع ديني",
+    "OTHER": "أخرى"
+  },
+  "name": "الاسم",
+  "namePlaceholder": "اسم نقطة الاهتمام بهذه اللغة",
+  "description": "الوصف",
+  "descriptionPlaceholder": "صف هذا المكان…",
+  "geofence": "السياج الجغرافي",
+  "mapHint_one": "رأس واحد · اسحب لإعادة التشكيل، انقر على حافة للإضافة",
+  "mapHint_other": "{{count}} رؤوس · اسحب لإعادة التشكيل، انقر على حافة للإضافة",
+  "allTranslated": "جميع اللغات مكتملة",
+  "missingTranslations": "ترجمات ناقصة",
+  "saveDraft": "حفظ المسودة",
+  "publish": "نشر"
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Notifications",
+  "description": "Recevez des alertes opérationnelles dans ce navigateur.",
+  "enable": "Activer les notifications",
+  "enabled": "Notifications activées",
+  "busy": "Activation…",
+  "blocked": "Les notifications sont bloquées dans les paramètres du navigateur.",
+  "unsupported": "Les notifications push ne sont pas configurées.",
+  "devices": "Appareils enregistrés",
+  "thisDevice": "Ce navigateur",
+  "remove": "Retirer",
+  "noDevices": "Aucun appareil enregistré.",
+  "newAlert": "Nouvelle alerte",
+  "webPush": "Push web",
+  "subscriptions": "Abonnements aux alertes",
+  "category": "Catégorie",
+  "channel": {
+    "PUSH": "Push",
+    "EMAIL": "E-mail"
+  },
+  "category_v": {
+    "RIDES": "Courses",
+    "TOURS": "Circuits",
+    "PROMOTIONS": "Promotions",
+    "WALLET": "Portefeuille"
+  }
+}

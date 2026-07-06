@@ -1,0 +1,18 @@
+{
+  "app": "Loüka · Admin",
+  "search": "Rechercher…",
+  "save": "Enregistrer",
+  "cancel": "Annuler",
+  "approve": "Approuver",
+  "reject": "Rejeter",
+  "loading": "Chargement…",
+  "empty": "Aucune donnée",
+  "language": "Langue",
+  "signOut": "Déconnexion",
+  "readOnly": "Accès en lecture seule — consultation sans action",
+  "retry": "Réessayer",
+  "errorTitle": "Une erreur est survenue",
+  "errorMsg": "L'écran n'a pas pu se charger. Veuillez réessayer.",
+  "showPassword": "Afficher le mot de passe",
+  "hidePassword": "Masquer le mot de passe"
+}

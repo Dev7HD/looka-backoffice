@@ -1,0 +1,27 @@
+{
+  "title": "Drivers",
+  "filterAll": "All",
+  "status": {
+    "ONLINE": "Online",
+    "ON_RIDE": "On ride",
+    "OFFLINE": "Offline",
+    "SUSPENDED": "Suspended"
+  },
+  "col": {
+    "id": "ID",
+    "name": "Driver",
+    "vehicle": "Vehicle",
+    "city": "City",
+    "status": "Status",
+    "rating": "Rating",
+    "rides": "Rides today",
+    "actions": "Actions"
+  },
+  "empty": "No drivers",
+  "suspend": "Suspend",
+  "reactivate": "Reactivate",
+  "onRide": "On {{ride}}",
+  "page": "Page {{page}} of {{pages}}",
+  "prev": "Previous",
+  "next": "Next"
+}

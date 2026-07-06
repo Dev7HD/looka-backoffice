@@ -1,0 +1,44 @@
+{
+  "queue": "File de revue",
+  "selectPrompt": "Sélectionnez un partenaire à examiner",
+  "noPartners": "Aucun partenaire dans cette file",
+  "submitted": "Soumis le",
+  "pendingDocs_one": "{{count}} doc en attente",
+  "pendingDocs_other": "{{count}} docs en attente",
+  "status": {
+    "PENDING": "En attente de revue",
+    "CHANGES_REQUESTED": "Modifications demandées",
+    "VERIFIED": "Vérifié",
+    "REJECTED": "Rejeté"
+  },
+  "contact": "Contact",
+  "contactName": "Nom du contact",
+  "email": "E-mail",
+  "phone": "Téléphone",
+  "address": "Adresse",
+  "catalog": "Catalogue",
+  "catalogCount_one": "{{count}} annonce",
+  "catalogCount_other": "{{count}} annonces",
+  "kyc": "Documents KYC",
+  "docType": {
+    "REGISTRATION": "Registre du commerce",
+    "LICENSE": "Licence touristique",
+    "ID": "Pièce d'identité",
+    "BANK": "Coordonnées bancaires"
+  },
+  "docStatus": {
+    "PENDING": "En attente",
+    "VERIFIED": "Vérifié",
+    "REJECTED": "Rejeté"
+  },
+  "verifyDoc": "Vérifier",
+  "rejectDoc": "Rejeter",
+  "actions": {
+    "approve": "Approuver le partenaire",
+    "requestChanges": "Demander des modifications",
+    "reject": "Rejeter"
+  },
+  "note": "Note du réviseur",
+  "notePlaceholder": "Note facultative au partenaire…",
+  "blockedByDocs": "Vérifiez tous les documents avant d'approuver"
+}

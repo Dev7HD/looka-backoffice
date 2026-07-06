@@ -1,0 +1,18 @@
+{
+  "title": "الإشراف على الوسائط",
+  "filterAll": "الكل",
+  "status": {
+    "PENDING": "قيد الانتظار",
+    "APPROVED": "مقبول",
+    "REJECTED": "مرفوض"
+  },
+  "type": {
+    "IMAGE": "صورة",
+    "AUDIO": "صوت"
+  },
+  "by": "بواسطة {{partner}}",
+  "empty": "لا توجد وسائط في هذه القائمة",
+  "approve": "قبول",
+  "reject": "رفض",
+  "duration": "{{sec}} ث"
+}
