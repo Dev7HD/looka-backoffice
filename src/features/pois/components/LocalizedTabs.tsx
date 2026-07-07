@@ -1,4 +1,5 @@
 import { LOCALES, LOCALE_LABELS, type Locale } from "@shared/i18n/config";
+import { cx } from "@shared/ui";
 
 /** Per-language tab bar. Each tab flags translation completeness. */
 export function LocalizedTabs({
@@ -12,24 +13,36 @@ export function LocalizedTabs({
   complete: Record<Locale, boolean>;
 }) {
   return (
-    <div className="ltabs" role="tablist" aria-label="Language">
+    <div
+      role="tablist"
+      aria-label="Language"
+      className="flex gap-1 rounded-sm border border-line bg-paper p-1"
+    >
       {LOCALES.map((l) => (
         <button
           key={l}
           role="tab"
           type="button"
           aria-selected={l === active}
-          className={"ltabs__tab" + (l === active ? " ltabs__tab--active" : "")}
           onClick={() => onSelect(l)}
+          className={cx(
+            "flex flex-1 items-center justify-center gap-2 rounded-sm px-3 py-2 text-13 font-medium transition-colors duration-(--dur-fast) ease-out",
+            l === active
+              ? "bg-surface text-ink shadow-1"
+              : "text-ink-soft hover:text-ink"
+          )}
         >
           <span
-            className={
-              "ltabs__dot " + (complete[l] ? "ltabs__dot--ok" : "ltabs__dot--miss")
-            }
             aria-hidden="true"
+            className={cx(
+              "size-2 shrink-0 rounded-pill",
+              complete[l]
+                ? "bg-success"
+                : "bg-line ring-[1.5px] ring-inset ring-brass"
+            )}
           />
-          <span className="ltabs__code">{l.toUpperCase()}</span>
-          <span className="ltabs__name">{LOCALE_LABELS[l]}</span>
+          <span className="min-[1120px]:hidden">{l.toUpperCase()}</span>
+          <span className="hidden min-[1120px]:inline">{LOCALE_LABELS[l]}</span>
         </button>
       ))}
     </div>

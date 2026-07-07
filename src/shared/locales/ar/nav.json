@@ -6,5 +6,9 @@
   "dispatch": "الإرسال",
   "ledger": "دفتر الحسابات",
   "media": "الوسائط",
-  "settings": "الإعدادات"
+  "settings": "الإعدادات",
+  "simulator": "المحاكي",
+  "fulfillment": "الحجوزات",
+  "ads": "الإعلانات",
+  "reports": "البلاغات"
 }

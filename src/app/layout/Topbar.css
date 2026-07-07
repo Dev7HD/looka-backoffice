@@ -11,12 +11,30 @@
   inset-block-start: 0;
   z-index: var(--z-topbar);
 }
+
+/* Hamburger — only shown once the sidebar collapses into a drawer. */
+.topbar__menu {
+  display: none;
+  place-items: center;
+  flex: none;
+  inline-size: var(--control-sm);
+  block-size: var(--control-sm);
+  border: var(--border-hairline);
+  border-radius: var(--r-sm);
+  color: var(--c-ink);
+}
+.topbar__menu:hover {
+  background: var(--c-paper);
+}
 .topbar__title {
   font-family: var(--font-display);
   font-weight: 600;
   font-size: var(--fs-22);
   color: var(--c-ink);
   white-space: nowrap;
+  min-inline-size: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .topbar__search {
@@ -92,4 +110,23 @@
 .topbar__signout:hover {
   background: var(--c-paper);
   color: var(--c-critical);
+}
+
+/* --- Tablet / mobile ---------------------------------------------------- */
+@media (max-width: 900px) {
+  .topbar {
+    gap: var(--space-3);
+    padding-inline: var(--space-4);
+  }
+  .topbar__menu {
+    display: grid;
+  }
+}
+@media (max-width: 640px) {
+  .topbar__search {
+    display: none;
+  }
+  .topbar__admin-name {
+    display: none;
+  }
 }

@@ -1,5 +1,7 @@
 {
   "title": "محرّر نقاط الاهتمام",
+  "selectPoi": "اختر نقطة اهتمام",
+  "newPoi": "نقطة اهتمام جديدة",
   "draft": "مسودة",
   "published": "منشور",
   "category": "الفئة",
@@ -12,7 +14,8 @@
     "BEACH": "شاطئ",
     "MARKET": "سوق",
     "RELIGIOUS_SITE": "موقع ديني",
-    "OTHER": "أخرى"
+    "OTHER": "أخرى",
+    "CAFE": "مقهى"
   },
   "name": "الاسم",
   "namePlaceholder": "اسم نقطة الاهتمام بهذه اللغة",
@@ -24,5 +27,17 @@
   "allTranslated": "جميع اللغات مكتملة",
   "missingTranslations": "ترجمات ناقصة",
   "saveDraft": "حفظ المسودة",
-  "publish": "نشر"
+  "publish": "نشر",
+  "delete": "حذف",
+  "disable": "تعطيل",
+  "enable": "تفعيل",
+  "confirmDelete": "حذف نقطة الاهتمام ومعرض صورها؟ لا يمكن التراجع.",
+  "gallery": "معرض الصور",
+  "galleryEmpty": "لا صور بعد — أضف واحدة أدناه.",
+  "addImage": "إضافة صورة",
+  "uploading": "جارٍ الرفع…",
+  "cover": "غلاف",
+  "setCover": "تعيين كغلاف",
+  "editImage": "تعديل",
+  "deleteImage": "حذف"
 }

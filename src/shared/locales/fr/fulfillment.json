@@ -1,0 +1,17 @@
+{
+  "fees": "Frais de réservation",
+  "kinds": {
+    "DRIVER_LEG": "Trajet chauffeur",
+    "FOOD_STOP": "Arrêt repas",
+    "COFFEE_STOP": "Arrêt café"
+  },
+  "save": "Enregistrer",
+  "feeSaved": "Frais mis à jour",
+  "assignments": "Affectations",
+  "tour": "Circuit",
+  "kind": "Type",
+  "partner": "Partenaire",
+  "fee": "Frais",
+  "status": "Statut",
+  "noAssignments": "Aucune affectation."
+}

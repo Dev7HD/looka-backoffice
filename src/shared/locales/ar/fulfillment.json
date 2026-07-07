@@ -1,0 +1,17 @@
+{
+  "fees": "رسوم الحجز",
+  "kinds": {
+    "DRIVER_LEG": "مرحلة سائق",
+    "FOOD_STOP": "محطة طعام",
+    "COFFEE_STOP": "محطة قهوة"
+  },
+  "save": "حفظ",
+  "feeSaved": "تم تحديث الرسوم",
+  "assignments": "التعيينات",
+  "tour": "جولة",
+  "kind": "النوع",
+  "partner": "شريك",
+  "fee": "رسوم",
+  "status": "الحالة",
+  "noAssignments": "لا تعيينات بعد."
+}

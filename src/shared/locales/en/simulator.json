@@ -1,0 +1,48 @@
+{
+  "title": "Tour simulator",
+  "reset": "Start over",
+  "pickHint": "Click the map to place a tourist",
+  "originSet": "Position set — configure the tour below.",
+  "configure": "Configure",
+  "preference": "Tour type",
+  "prefs": {
+    "TOURIST": "Tourist",
+    "TOURIST_FOOD": "+ Food",
+    "TOURIST_FOOD_COFFEE": "+ Food & coffee"
+  },
+  "stops": "Stops",
+  "suggest": "Suggest tour",
+  "suggesting": "Suggesting…",
+  "suggestError": "Could not suggest a tour",
+  "route": "Suggested route",
+  "totalKm": "{{km}} km total",
+  "roles": {
+    "TOURIST": "Sight",
+    "FOOD": "Food",
+    "COFFEE": "Coffee",
+    "ANY": "Stop"
+  },
+  "fromOrigin": "from start",
+  "fromPrev": "from previous",
+  "mode": {
+    "WALK": "walk",
+    "DRIVE": "drive"
+  },
+  "needDriver": "Need a driver?",
+  "noDrivers": "no drivers nearby",
+  "driversFound": "{{count}} driver available",
+  "driversFound_other": "{{count}} drivers available",
+  "removeStop": "Remove stop",
+  "requestNewStop": "+ Request new stop",
+  "noMoreStops": "No more stops nearby",
+  "tourName": "Tour name",
+  "tourNamePlaceholder": "e.g. Medina morning",
+  "schedule": "Scheduled for",
+  "saveTour": "Save as future tour",
+  "tourSaved": "Future tour saved",
+  "saveError": "Could not save the tour",
+  "savedTours": "Future tours",
+  "noSavedTours": "No future tours yet.",
+  "stopCount": "{{count}} stop",
+  "stopCount_other": "{{count}} stops"
+}

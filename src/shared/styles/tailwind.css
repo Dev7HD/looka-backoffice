@@ -1,0 +1,125 @@
+/* =============================================================================
+   Loüka · Admin — Tailwind v4 theme bridge
+   Maps Tailwind's theme onto the design-system tokens in tokens.css via
+   `@theme inline`, so utilities emit `var(--c-*)` and dark-mode overrides
+   (html[data-theme="dark"]) keep working at runtime.
+
+   Preflight is intentionally NOT imported — the project ships its own reset.css.
+   tokens.css is the single source of truth; never hardcode hex / px in code.
+   ============================================================================= */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+/* Dark theme is toggled via <html data-theme="dark">, not a `dark` class. */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme inline {
+  /* --- Colors --> bg-*, text-*, border-*, ring-* -------------------------- */
+  --color-primary: var(--c-primary);
+  --color-primary-soft: var(--c-primary-soft);
+  --color-brass: var(--c-brass);
+  --color-brass-soft: var(--c-brass-soft);
+
+  --color-ink: var(--c-ink);
+  --color-ink-soft: var(--c-ink-soft);
+  --color-paper: var(--c-paper);
+  --color-surface: var(--c-surface);
+  --color-line: var(--c-line);
+
+  --color-success: var(--c-success);
+  --color-warning: var(--c-warning);
+  --color-info: var(--c-info);
+  --color-critical: var(--c-critical);
+
+  --color-sidebar: var(--c-sidebar);
+  --color-sidebar-accent: var(--c-sidebar-accent);
+  --color-sidebar-text: var(--c-sidebar-text);
+  --color-sidebar-text-soft: var(--c-sidebar-text-soft);
+
+  --color-on-primary: var(--c-on-primary);
+  --color-on-ink: var(--c-on-ink);
+  --color-focus: var(--c-focus);
+
+  /* Ride terminal states (shared vocab w/ backend + mobile) */
+  --color-ride-pending: var(--c-ride-pending);
+  --color-ride-validated: var(--c-ride-validated);
+  --color-ride-in-tour: var(--c-ride-in-tour);
+  --color-ride-completed: var(--c-ride-completed);
+  --color-ride-cancelled: var(--c-ride-cancelled);
+  --color-ride-abandoned: var(--c-ride-abandoned);
+
+  /* --- Fonts --> font-* --------------------------------------------------- */
+  --font-ui: var(--font-ui);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
+
+  /* --- Font sizes --> text-* ---------------------------------------------- */
+  --text-11: var(--fs-11);
+  --text-12: var(--fs-12);
+  --text-13: var(--fs-13);
+  --text-14: var(--fs-14);
+  --text-15: var(--fs-15);
+  --text-16: var(--fs-16);
+  --text-18: var(--fs-18);
+  --text-22: var(--fs-22);
+  --text-28: var(--fs-28);
+
+  /* --- Font weights --> font-* -------------------------------------------- */
+  --font-weight-regular: var(--fw-regular);
+  --font-weight-medium: var(--fw-medium);
+  --font-weight-semibold: var(--fw-semibold);
+  --font-weight-bold: var(--fw-bold);
+
+  /* --- Line heights / tracking -------------------------------------------- */
+  --leading-tight: var(--lh-tight);
+  --leading-body: var(--lh-body);
+  --tracking-caps: var(--tracking-caps);
+
+  /* --- Spacing --> p-*, m-*, gap-*, w-*, h-* ------------------------------ */
+  --spacing-1: var(--space-1);
+  --spacing-2: var(--space-2);
+  --spacing-3: var(--space-3);
+  --spacing-4: var(--space-4);
+  --spacing-5: var(--space-5);
+  --spacing-6: var(--space-6);
+  --spacing-8: var(--space-8);
+  --spacing-10: var(--space-10);
+  --spacing-12: var(--space-12);
+  --spacing-16: var(--space-16);
+
+  /* --- Radius --> rounded-* ----------------------------------------------- */
+  --radius-sm: var(--r-sm);
+  --radius-md: var(--r-md);
+  --radius-lg: var(--r-lg);
+  --radius-pill: var(--r-pill);
+
+  /* --- Control heights --> h-control-* ------------------------------------ */
+  --spacing-control-sm: var(--control-sm);
+  --spacing-control-md: var(--control-md);
+  --spacing-control-lg: var(--control-lg);
+
+  /* --- Layout dimensions -------------------------------------------------- */
+  --spacing-sidebar: var(--sidebar-w);
+  --spacing-topbar: var(--topbar-h);
+  --spacing-content-max: var(--content-max);
+
+  /* --- Elevation --> shadow-* --------------------------------------------- */
+  --shadow-1: var(--shadow-1);
+  --shadow-2: var(--shadow-2);
+  --shadow-pop: var(--shadow-pop);
+
+  /* --- Motion --> ease-*, default duration -------------------------------- */
+  /* Named durations aren't a Tailwind namespace; reference tokens inline with
+     the `duration-(--dur-fast)` shorthand where a non-default speed is needed. */
+  --ease-out: var(--ease-out);
+  --default-transition-duration: var(--dur-base);
+
+  /* --- Z-index --> z-* ---------------------------------------------------- */
+  --z-index-sidebar: var(--z-sidebar);
+  --z-index-topbar: var(--z-topbar);
+  --z-index-dropdown: var(--z-dropdown);
+  --z-index-modal: var(--z-modal);
+  --z-index-toast: var(--z-toast);
+  --z-index-studio: var(--z-studio);
+}

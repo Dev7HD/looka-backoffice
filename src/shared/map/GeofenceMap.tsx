@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import { HAS_MAPBOX } from "./config";
 import { SvgGeofenceEditor } from "./SvgGeofenceEditor";
 import type { GeofenceEditorProps } from "./types";
+import "./map.css";
 
 // Mapbox GL is heavy — only pulled into the bundle when a token exists.
 const MapboxGeofenceEditor = lazy(() =>

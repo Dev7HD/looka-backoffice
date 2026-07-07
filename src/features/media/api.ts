@@ -20,6 +20,16 @@ export function mediaUrl(id: string): string {
   return `${API_BASE_URL.replace(/\/$/, "")}/media/${id}`;
 }
 
+/**
+ * Resolve a media id to a directly-loadable (time-limited presigned) URL via `GET /media/{id}/url`.
+ * Browsers can't attach the bearer token to an `<img>` request, so we fetch the URL as JSON first.
+ */
+export function resolveMediaUrl(id: string): Promise<string> {
+  if (USE_MOCK_API)
+    return mockDelay(`https://picsum.photos/seed/${encodeURIComponent(id)}/600/400`);
+  return apiRequest<{ url: string }>(`/media/${id}/url`).then((r) => r.url);
+}
+
 interface ListParams {
   status?: MediaStatus;
 }

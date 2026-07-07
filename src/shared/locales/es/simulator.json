@@ -1,0 +1,48 @@
+{
+  "title": "Simulador de rutas",
+  "reset": "Empezar de nuevo",
+  "pickHint": "Haz clic en el mapa para colocar un turista",
+  "originSet": "Posición fijada — configura la ruta abajo.",
+  "configure": "Configurar",
+  "preference": "Tipo de ruta",
+  "prefs": {
+    "TOURIST": "Turística",
+    "TOURIST_FOOD": "+ Comida",
+    "TOURIST_FOOD_COFFEE": "+ Comida y café"
+  },
+  "stops": "Paradas",
+  "suggest": "Sugerir ruta",
+  "suggesting": "Sugiriendo…",
+  "suggestError": "No se pudo sugerir una ruta",
+  "route": "Ruta sugerida",
+  "totalKm": "{{km}} km en total",
+  "roles": {
+    "TOURIST": "Lugar",
+    "FOOD": "Comida",
+    "COFFEE": "Café",
+    "ANY": "Parada"
+  },
+  "fromOrigin": "desde el inicio",
+  "fromPrev": "desde la anterior",
+  "mode": {
+    "WALK": "a pie",
+    "DRIVE": "en coche"
+  },
+  "needDriver": "¿Necesitas conductor?",
+  "noDrivers": "no hay conductores cerca",
+  "driversFound": "{{count}} conductor disponible",
+  "driversFound_other": "{{count}} conductores disponibles",
+  "removeStop": "Quitar parada",
+  "requestNewStop": "+ Nueva parada",
+  "noMoreStops": "No hay más paradas cerca",
+  "tourName": "Nombre de la ruta",
+  "tourNamePlaceholder": "p. ej. Medina por la mañana",
+  "schedule": "Programada para",
+  "saveTour": "Guardar como ruta futura",
+  "tourSaved": "Ruta futura guardada",
+  "saveError": "No se pudo guardar la ruta",
+  "savedTours": "Rutas futuras",
+  "noSavedTours": "Aún no hay rutas futuras.",
+  "stopCount": "{{count}} parada",
+  "stopCount_other": "{{count}} paradas"
+}

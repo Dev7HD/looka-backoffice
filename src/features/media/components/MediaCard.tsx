@@ -48,7 +48,7 @@ export function MediaCard({
           {item.type === "AUDIO" && item.durationSec != null && (
             <Chip intent="neutral" size="sm">{t("duration", { sec: item.durationSec })}</Chip>
           )}
-          <Chip intent="neutral" size="sm">{item.locale.toUpperCase()}</Chip>
+          {item.locale && <Chip intent="neutral" size="sm">{item.locale.toUpperCase()}</Chip>}
         </span>
       </div>
 

@@ -6,5 +6,9 @@
   "dispatch": "Répartition",
   "ledger": "Grand livre",
   "media": "Médias",
-  "settings": "Paramètres"
+  "settings": "Paramètres",
+  "simulator": "Simulateur",
+  "fulfillment": "Réservations",
+  "ads": "Publicités",
+  "reports": "Signalements"
 }

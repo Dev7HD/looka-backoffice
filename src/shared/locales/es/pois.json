@@ -1,5 +1,7 @@
 {
   "title": "Editor de POI",
+  "selectPoi": "Seleccionar POI",
+  "newPoi": "Nuevo POI",
   "draft": "Borrador",
   "published": "Publicado",
   "category": "Categoría",
@@ -12,7 +14,8 @@
     "BEACH": "Playa",
     "MARKET": "Mercado",
     "RELIGIOUS_SITE": "Sitio religioso",
-    "OTHER": "Otro"
+    "OTHER": "Otro",
+    "CAFE": "Cafetería"
   },
   "name": "Nombre",
   "namePlaceholder": "Nombre del POI en este idioma",
@@ -24,5 +27,17 @@
   "allTranslated": "Todos los idiomas completos",
   "missingTranslations": "Traducciones faltantes",
   "saveDraft": "Guardar borrador",
-  "publish": "Publicar"
+  "publish": "Publicar",
+  "delete": "Eliminar",
+  "disable": "Desactivar",
+  "enable": "Activar",
+  "confirmDelete": "¿Eliminar este POI y su galería? Esta acción es irreversible.",
+  "gallery": "Galería de imágenes",
+  "galleryEmpty": "Aún no hay imágenes: añade una abajo.",
+  "addImage": "Añadir imagen",
+  "uploading": "Subiendo…",
+  "cover": "Portada",
+  "setCover": "Definir como portada",
+  "editImage": "Editar",
+  "deleteImage": "Eliminar"
 }

@@ -13,6 +13,11 @@ body,
 #root {
   height: 100%;
 }
+html {
+  /* Contain the off-canvas nav drawer so it never creates a horizontal
+     scrollbar; overflow-y stays scrollable and position:sticky keeps working. */
+  overflow-x: hidden;
+}
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;

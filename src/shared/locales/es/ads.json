@@ -1,0 +1,15 @@
+{
+  "reviewQueue": "Cola de revisión",
+  "emptyQueue": "Sin campañas por revisar.",
+  "budget": "presupuesto",
+  "stats": "Estadísticas",
+  "reject": "Rechazar",
+  "approve": "Aprobar",
+  "approved": "Campaña aprobada",
+  "rejected": "Campaña rechazada",
+  "reviewError": "Revisión fallida",
+  "impressions": "Impresiones",
+  "clicks": "Clics",
+  "spent": "Gastado",
+  "remaining": "Restante"
+}

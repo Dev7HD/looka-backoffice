@@ -1,8 +1,17 @@
 .settings {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: var(--space-5);
-  max-inline-size: 640px;
+  align-items: start;
+}
+/* Wide screens: Account + Preferences share a row; Notifications spans full. */
+@media (min-width: 960px) {
+  .settings {
+    grid-template-columns: 1fr 1fr;
+  }
+  .settings > :last-child {
+    grid-column: 1 / -1;
+  }
 }
 
 .settings__account {

@@ -14,7 +14,7 @@ function initials(name: string): string {
     .toUpperCase();
 }
 
-export function Topbar() {
+export function Topbar({ onMenu }: { onMenu?: () => void }) {
   const { t } = useTranslation(["nav", "common"]);
   const { pathname } = useLocation();
   const { user, logout } = useAuth();
@@ -26,6 +26,19 @@ export function Topbar() {
 
   return (
     <header className="topbar">
+      <button
+        className="topbar__menu"
+        type="button"
+        onClick={onMenu}
+        aria-label={t("menu", { ns: "common" })}
+      >
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8"
+          strokeLinecap="round" width="20" height="20" aria-hidden="true">
+          <path d="M3 6h18" />
+          <path d="M3 12h18" />
+          <path d="M3 18h18" />
+        </svg>
+      </button>
       <h1 className="topbar__title">{title}</h1>
 
       <div className="topbar__search">

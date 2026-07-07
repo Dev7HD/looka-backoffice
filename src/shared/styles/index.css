@@ -1,6 +1,10 @@
 /* Central stylesheet entry — import once in main.tsx.
-   Order matters: fonts → tokens → reset → global. */
+   Order matters: fonts → tokens → tailwind → base (reset/global/pages).
+   reset/global/pages are pulled into Tailwind's `base` cascade layer so
+   component-level utility classes reliably win over base element styles. */
 @import "./fonts.css";
 @import "./tokens.css";
-@import "./reset.css";
-@import "./global.css";
+@import "./tailwind.css";
+@import "./reset.css" layer(base);
+@import "./global.css" layer(base);
+@import "./pages.css" layer(base);

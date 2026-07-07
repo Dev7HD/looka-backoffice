@@ -16,6 +16,7 @@ export type PoiCategory =
   | "MUSEUM"
   | "VIEWPOINT"
   | "RESTAURANT"
+  | "CAFE"
   | "PARK"
   | "BEACH"
   | "MARKET"
@@ -23,7 +24,7 @@ export type PoiCategory =
   | "OTHER";
 
 export const POI_CATEGORIES: PoiCategory[] = [
-  "MONUMENT", "MUSEUM", "VIEWPOINT", "RESTAURANT", "PARK",
+  "MONUMENT", "MUSEUM", "VIEWPOINT", "RESTAURANT", "CAFE", "PARK",
   "BEACH", "MARKET", "RELIGIOUS_SITE", "OTHER",
 ];
 
@@ -48,4 +49,11 @@ export interface Poi {
 
 export interface PoiDraft extends Omit<Poi, "id" | "published"> {
   id?: string;
+}
+
+/** One image in a POI's gallery (backend `poi_image` → media-storage asset). */
+export interface PoiImage {
+  mediaId: string;
+  position: number;
+  cover: boolean;
 }

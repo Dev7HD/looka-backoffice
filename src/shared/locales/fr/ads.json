@@ -1,0 +1,15 @@
+{
+  "reviewQueue": "File de révision",
+  "emptyQueue": "Aucune campagne à réviser.",
+  "budget": "budget",
+  "stats": "Stats",
+  "reject": "Rejeter",
+  "approve": "Approuver",
+  "approved": "Campagne approuvée",
+  "rejected": "Campagne rejetée",
+  "reviewError": "Échec de la révision",
+  "impressions": "Impressions",
+  "clicks": "Clics",
+  "spent": "Dépensé",
+  "remaining": "Restant"
+}

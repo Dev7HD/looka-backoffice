@@ -9,7 +9,7 @@ export interface MediaItem {
   title: string;
   poiName: string;
   uploadedBy: string; // partner
-  locale: string; // fr | en | es | ar (audio narration / caption language)
+  locale: string | null; // fr | en | es | ar (audio narration / caption language); may be null
   status: MediaStatus;
   uploadedAt: string; // ISO
   durationSec?: number; // AUDIO

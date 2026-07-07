@@ -1,0 +1,15 @@
+{
+  "reviewQueue": "Review queue",
+  "emptyQueue": "No campaigns awaiting review.",
+  "budget": "budget",
+  "stats": "Stats",
+  "reject": "Reject",
+  "approve": "Approve",
+  "approved": "Campaign approved",
+  "rejected": "Campaign rejected",
+  "reviewError": "Review failed",
+  "impressions": "Impressions",
+  "clicks": "Clicks",
+  "spent": "Spent",
+  "remaining": "Remaining"
+}

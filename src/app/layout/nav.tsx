@@ -24,5 +24,9 @@ export const NAV: NavItem[] = [
   { to: "/dispatch", key: "dispatch", icon: I("M12 2v4|M12 18v4|M2 12h4|M18 12h4|M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z") },
   { to: "/ledger", key: "ledger", icon: I("M4 4h16v16H4z|M8 9h8|M8 13h8|M8 17h5") },
   { to: "/media", key: "media", icon: I("M4 5h16v14H4z|M4 15l4-4 4 4 3-3 5 5|M9 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z") },
+  { to: "/simulator", key: "simulator", icon: I("M3 11l19-9-9 19-2-8-8-2z") },
+  { to: "/fulfillment", key: "fulfillment", icon: I("M9 11l3 3L22 4|M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11") },
+  { to: "/ads", key: "ads", icon: I("M3 11v2a1 1 0 0 0 1 1h3l4 4V6L7 10H4a1 1 0 0 0-1 1z|M16 8a5 5 0 0 1 0 8") },
+  { to: "/reports", key: "reports", icon: I("M12 9v4|M12 17h.01|M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z") },
   { to: "/settings", key: "settings", icon: I("M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z|M19 12a7 7 0 0 0-.1-1.4l2-1.6-2-3.4-2.4 1a7 7 0 0 0-2.4-1.4L11.8 2h-4l-.3 2.2a7 7 0 0 0-2.4 1.4l-2.4-1-2 3.4 2 1.6a7 7 0 0 0 0 2.8l-2 1.6 2 3.4 2.4-1a7 7 0 0 0 2.4 1.4l.3 2.2h4l.3-2.2a7 7 0 0 0 2.4-1.4l2.4 1 2-3.4-2-1.6c.06-.46.1-.93.1-1.4z") },
 ];

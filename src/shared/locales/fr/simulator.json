@@ -1,0 +1,48 @@
+{
+  "title": "Simulateur de circuit",
+  "reset": "Recommencer",
+  "pickHint": "Cliquez sur la carte pour placer un touriste",
+  "originSet": "Position définie — configurez le circuit ci-dessous.",
+  "configure": "Configurer",
+  "preference": "Type de circuit",
+  "prefs": {
+    "TOURIST": "Touristique",
+    "TOURIST_FOOD": "+ Repas",
+    "TOURIST_FOOD_COFFEE": "+ Repas & café"
+  },
+  "stops": "Arrêts",
+  "suggest": "Proposer un circuit",
+  "suggesting": "Proposition…",
+  "suggestError": "Impossible de proposer un circuit",
+  "route": "Circuit proposé",
+  "totalKm": "{{km}} km au total",
+  "roles": {
+    "TOURIST": "Site",
+    "FOOD": "Repas",
+    "COFFEE": "Café",
+    "ANY": "Arrêt"
+  },
+  "fromOrigin": "depuis le départ",
+  "fromPrev": "depuis le précédent",
+  "mode": {
+    "WALK": "à pied",
+    "DRIVE": "en voiture"
+  },
+  "needDriver": "Besoin d'un chauffeur ?",
+  "noDrivers": "aucun chauffeur à proximité",
+  "driversFound": "{{count}} chauffeur disponible",
+  "driversFound_other": "{{count}} chauffeurs disponibles",
+  "removeStop": "Retirer l'arrêt",
+  "requestNewStop": "+ Nouvel arrêt",
+  "noMoreStops": "Plus d'arrêts à proximité",
+  "tourName": "Nom du circuit",
+  "tourNamePlaceholder": "ex. Médina matinale",
+  "schedule": "Prévu pour",
+  "saveTour": "Enregistrer comme circuit futur",
+  "tourSaved": "Circuit futur enregistré",
+  "saveError": "Impossible d'enregistrer le circuit",
+  "savedTours": "Circuits futurs",
+  "noSavedTours": "Aucun circuit futur.",
+  "stopCount": "{{count}} arrêt",
+  "stopCount_other": "{{count}} arrêts"
+}

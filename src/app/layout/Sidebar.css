@@ -12,6 +12,29 @@
   inset-block-start: 0;
 }
 
+/* --- Tablet / mobile: off-canvas drawer toggled from the topbar --------- */
+@media (max-width: 900px) {
+  .sidebar {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-start: 0;
+    z-index: var(--z-modal);
+    box-shadow: var(--shadow-pop);
+    transform: translateX(-100%);
+    transition: transform var(--dur-base) var(--ease-out);
+  }
+  .sidebar.sidebar--open {
+    transform: translateX(0);
+  }
+  /* RTL: the drawer slides in from the inline-start (right) edge. */
+  [dir="rtl"] .sidebar {
+    transform: translateX(100%);
+  }
+  [dir="rtl"] .sidebar.sidebar--open {
+    transform: translateX(0);
+  }
+}
+
 .sidebar__brand {
   display: flex;
   align-items: center;

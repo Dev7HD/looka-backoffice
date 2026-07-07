@@ -6,5 +6,9 @@
   "dispatch": "Dispatch",
   "ledger": "Ledger",
   "media": "Media",
-  "settings": "Settings"
+  "settings": "Settings",
+  "simulator": "Simulator",
+  "fulfillment": "Fulfillment",
+  "ads": "Ads",
+  "reports": "Reports"
 }

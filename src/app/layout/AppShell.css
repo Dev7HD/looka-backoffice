@@ -1,6 +1,8 @@
 .shell {
   display: grid;
-  grid-template-columns: var(--sidebar-w) 1fr;
+  /* minmax(0, 1fr) — never let the content column grow past the viewport just
+     because a child (topbar, wide table) has a large min-content size. */
+  grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
   grid-template-rows: var(--topbar-h) 1fr;
   grid-template-areas:
     "sidebar topbar"
@@ -9,7 +11,44 @@
 }
 .shell__content {
   grid-area: content;
-  padding: var(--space-6);
-  max-inline-size: var(--content-max);
   inline-size: 100%;
+  /* Allow the grid track to shrink below content min-content so wide children
+     (tables, number grids) don't blow the column past the viewport. */
+  min-inline-size: 0;
+  max-inline-size: var(--content-max);
+  margin-inline: auto;
+  padding: var(--space-6);
+}
+
+/* Scrim behind the mobile nav drawer — inert until the drawer opens. */
+.shell__scrim {
+  display: none;
+}
+
+/* --- Tablet / mobile: sidebar becomes an off-canvas drawer -------------- */
+@media (max-width: 900px) {
+  .shell {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "topbar"
+      "content";
+  }
+  .shell__content {
+    padding: var(--space-4);
+  }
+  .shell__scrim {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: calc(var(--z-modal) - 1);
+    border: none;
+    background: rgba(0, 0, 0, 0.45); /* neutral overlay scrim */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--dur-base) var(--ease-out);
+  }
+  .shell--nav-open .shell__scrim {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }

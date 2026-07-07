@@ -59,4 +59,8 @@ export const ROUTE_ROLES: Record<string, AppRole[]> = {
   ledger: ["FINANCE"],
   media: ["MEDIA_MODERATOR"],
   settings: [],
+  simulator: ["CATALOG_MANAGER", "DISPATCHER"],
+  fulfillment: ["DISPATCHER"],
+  ads: ["MEDIA_MODERATOR"],
+  reports: ["PARTNER_MANAGER"],
 };

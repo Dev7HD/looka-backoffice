@@ -1,0 +1,17 @@
+{
+  "openReports": "البلاغات المفتوحة",
+  "empty": "لا بلاغات مفتوحة.",
+  "partner": "شريك",
+  "reasons": {
+    "FRAUD": "احتيال",
+    "SAFETY": "سلامة",
+    "BEHAVIOR": "سلوك",
+    "OTHER": "أخرى"
+  },
+  "actions": {
+    "REVIEWED": "روجع",
+    "DISMISSED": "تجاهل",
+    "ACTION_TAKEN": "اتخاذ إجراء"
+  },
+  "resolved": "تم حل البلاغ"
+}

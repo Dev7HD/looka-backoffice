@@ -1,5 +1,7 @@
 {
   "title": "POI editor",
+  "selectPoi": "Select POI",
+  "newPoi": "New POI",
   "draft": "Draft",
   "published": "Published",
   "category": "Category",
@@ -12,7 +14,8 @@
     "BEACH": "Beach",
     "MARKET": "Market",
     "RELIGIOUS_SITE": "Religious site",
-    "OTHER": "Other"
+    "OTHER": "Other",
+    "CAFE": "Café"
   },
   "name": "Name",
   "namePlaceholder": "POI name in this language",
@@ -24,5 +27,17 @@
   "allTranslated": "All languages complete",
   "missingTranslations": "Missing translations",
   "saveDraft": "Save draft",
-  "publish": "Publish"
+  "publish": "Publish",
+  "delete": "Delete",
+  "disable": "Disable",
+  "enable": "Enable",
+  "confirmDelete": "Delete this POI and its gallery? This cannot be undone.",
+  "gallery": "Image gallery",
+  "galleryEmpty": "No images yet — add one below.",
+  "addImage": "Add image",
+  "uploading": "Uploading…",
+  "cover": "Cover",
+  "setCover": "Set as cover",
+  "editImage": "Edit",
+  "deleteImage": "Delete"
 }

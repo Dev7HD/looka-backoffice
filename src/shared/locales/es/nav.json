@@ -6,5 +6,9 @@
   "dispatch": "Despacho",
   "ledger": "Libro mayor",
   "media": "Medios",
-  "settings": "Ajustes"
+  "settings": "Ajustes",
+  "simulator": "Simulador",
+  "fulfillment": "Reservas",
+  "ads": "Anuncios",
+  "reports": "Reportes"
 }

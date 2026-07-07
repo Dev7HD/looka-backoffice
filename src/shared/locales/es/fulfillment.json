@@ -1,0 +1,17 @@
+{
+  "fees": "Tarifas de reserva",
+  "kinds": {
+    "DRIVER_LEG": "Tramo conductor",
+    "FOOD_STOP": "Parada comida",
+    "COFFEE_STOP": "Parada café"
+  },
+  "save": "Guardar",
+  "feeSaved": "Tarifa actualizada",
+  "assignments": "Asignaciones",
+  "tour": "Ruta",
+  "kind": "Tipo",
+  "partner": "Socio",
+  "fee": "Tarifa",
+  "status": "Estado",
+  "noAssignments": "Sin asignaciones."
+}

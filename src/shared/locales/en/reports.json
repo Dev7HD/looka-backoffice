@@ -1,0 +1,17 @@
+{
+  "openReports": "Open reports",
+  "empty": "No open reports.",
+  "partner": "Partner",
+  "reasons": {
+    "FRAUD": "Fraud",
+    "SAFETY": "Safety",
+    "BEHAVIOR": "Behavior",
+    "OTHER": "Other"
+  },
+  "actions": {
+    "REVIEWED": "Reviewed",
+    "DISMISSED": "Dismiss",
+    "ACTION_TAKEN": "Take action"
+  },
+  "resolved": "Report resolved"
+}

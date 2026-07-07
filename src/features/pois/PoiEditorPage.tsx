@@ -12,13 +12,19 @@ import {
   Input,
   Textarea,
 } from "@shared/ui";
-import { usePoi, useSavePoi } from "./hooks";
+import {
+  useDeletePoi,
+  usePoi,
+  usePoiList,
+  useSavePoi,
+  useSetPoiPublished,
+} from "./hooks";
+import { PoiGallery } from "./components/PoiGallery";
 import { emptyLocalized, POI_CATEGORIES, type LngLat, type PoiCategory, type PoiDraft } from "./types";
 import { isPublishable, missingLocales } from "./completeness";
 import { LocalizedTabs } from "./components/LocalizedTabs";
 import { GeofenceMap } from "@shared/map/GeofenceMap";
 import { Can } from "@shared/auth/Can";
-import "./pois.css";
 
 const CATEGORIES = POI_CATEGORIES;
 
@@ -33,8 +39,13 @@ const EMPTY_DRAFT: PoiDraft = {
 
 export function PoiEditorPage() {
   const { t } = useTranslation("pois");
-  const query = usePoi("poi-01"); // single-POI editor demo
+  // Pick an existing POI from the backend catalog to edit, or start a new one.
+  const list = usePoiList();
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const query = usePoi(selectedId);
   const save = useSavePoi();
+  const del = useDeletePoi();
+  const setPublished = useSetPoiPublished();
 
   const [draft, setDraft] = useState<PoiDraft>(EMPTY_DRAFT);
   const [active, setActive] = useState<Locale>("fr");
@@ -48,6 +59,19 @@ export function PoiEditorPage() {
       setDirty(false);
     }
   }, [query.data]);
+
+  const selectPoi = (id: string) => {
+    if (id === "") {
+      setSelectedId(null);
+      setDraft(EMPTY_DRAFT);
+      setDirty(false);
+    } else {
+      setSelectedId(id);
+    }
+  };
+
+  const poiLabel = (p: { id: string; name: Record<Locale, string> }) =>
+    p.name[active]?.trim() || p.name.en?.trim() || p.id;
 
   const complete = useMemo(
     () =>
@@ -76,6 +100,23 @@ export function PoiEditorPage() {
       { onSuccess: () => setDirty(false) }
     );
 
+  const doDelete = () => {
+    if (!selectedId) return;
+    if (!window.confirm(t("confirmDelete"))) return;
+    del.mutate(selectedId, {
+      onSuccess: () => {
+        setSelectedId(null);
+        setDraft(EMPTY_DRAFT);
+        setDirty(false);
+      },
+    });
+  };
+
+  const doToggleEnabled = () => {
+    if (!selectedId) return;
+    setPublished.mutate({ id: selectedId, published: !query.data?.published });
+  };
+
   const resetDraft = () => {
     if (!query.data) return;
     const { id, published: _p, ...rest } = query.data;
@@ -86,9 +127,9 @@ export function PoiEditorPage() {
   const dir = dirFor(active);
 
   return (
-    <div className="poi">
+    <div className="grid grid-cols-1 items-start gap-5 min-[960px]:grid-cols-2">
       {/* --- Form panel --- */}
-      <Card className="poi__form">
+      <Card className="min-[960px]:col-start-1 min-[960px]:row-start-1">
         <CardHeader
           title={t("title")}
           actions={
@@ -103,7 +144,23 @@ export function PoiEditorPage() {
             )
           }
         />
-        <CardBody>
+        <CardBody className="flex flex-col gap-5">
+          <Field label={t("selectPoi")} htmlFor="poi-select">
+            <select
+              id="poi-select"
+              className="input"
+              value={selectedId ?? ""}
+              onChange={(e) => selectPoi(e.target.value)}
+            >
+              <option value="">{t("newPoi")}</option>
+              {(list.data ?? []).map((p) => (
+                <option key={p.id} value={p.id}>
+                  {poiLabel(p)}
+                </option>
+              ))}
+            </select>
+          </Field>
+
           <Field label={t("category")} htmlFor="poi-cat">
             <select
               id="poi-cat"
@@ -119,9 +176,9 @@ export function PoiEditorPage() {
             </select>
           </Field>
 
-          <div className="poi__i18n">
+          <div className="flex flex-col gap-4">
             <LocalizedTabs active={active} onSelect={setActive} complete={complete} />
-            <div className="poi__i18n-fields" dir={dir}>
+            <div className="flex flex-col gap-4" dir={dir}>
               <Field label={t("name")} htmlFor="poi-name">
                 <Input
                   id="poi-name"
@@ -147,12 +204,22 @@ export function PoiEditorPage() {
         </CardBody>
       </Card>
 
+      {/* --- Gallery panel (existing POIs only) --- */}
+      {selectedId && (
+        <Card className="min-[960px]:col-start-1 min-[960px]:row-start-2">
+          <CardHeader title={t("gallery")} />
+          <CardBody>
+            <PoiGallery poiId={selectedId} />
+          </CardBody>
+        </Card>
+      )}
+
       {/* --- Map panel --- */}
-      <Card className="poi__map">
+      <Card className="min-[960px]:col-start-2 min-[960px]:row-start-1">
         <CardHeader
           title={t("geofence")}
           actions={
-            <span className="poi__coords mono">
+            <span className="font-mono text-12 tabular-nums text-ink-soft">
               {draft.center.lat.toFixed(4)}, {draft.center.lng.toFixed(4)}
             </span>
           }
@@ -163,22 +230,22 @@ export function PoiEditorPage() {
             points={draft.geofence}
             onChange={setGeofence}
           />
-          <p className="poi__map-hint">
+          <p className="mt-3 text-12 text-ink-soft">
             {t("mapHint", { count: draft.geofence.length })}
           </p>
         </CardBody>
       </Card>
 
       {/* --- Save / publish footer --- */}
-      <Card className="poi__footer">
+      <Card className="min-[960px]:col-span-2">
         <CardFooter>
-          <div className="poi__completeness">
+          <div className="me-auto">
             {missing.length === 0 ? (
               <Chip intent="success" size="sm" dot>
                 {t("allTranslated")}
               </Chip>
             ) : (
-              <span className="poi__missing">
+              <span className="text-12 font-medium text-brass">
                 {t("missingTranslations")}:{" "}
                 {missing.map((l) => l.toUpperCase()).join(", ")}
               </span>
@@ -194,8 +261,28 @@ export function PoiEditorPage() {
           </Button>
           <Can
             role="CATALOG_MANAGER"
-            fallback={<span className="poi__missing">{t("readOnly", { ns: "common" })}</span>}
+            fallback={<span className="text-12 font-medium text-brass">{t("readOnly", { ns: "common" })}</span>}
           >
+            {selectedId && (
+              <>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  disabled={del.isPending}
+                  onClick={doDelete}
+                >
+                  {t("delete")}
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  disabled={setPublished.isPending}
+                  onClick={doToggleEnabled}
+                >
+                  {query.data?.published ? t("disable") : t("enable")}
+                </Button>
+              </>
+            )}
             <Button
               variant="secondary"
               size="sm"

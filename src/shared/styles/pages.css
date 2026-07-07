@@ -1,0 +1,70 @@
+/* Shared layout utilities for feature pages (fulfillment/ads/reports).
+   Tokens only — never hardcode hex / px. */
+.page-stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.muted {
+  color: var(--c-ink-soft);
+  font-size: var(--fs-12);
+}
+.fees-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-3);
+}
+.fees-row {
+  display: flex;
+  gap: var(--space-2);
+  align-items: center;
+}
+.ads-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.ads-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border: var(--border-hairline);
+  border-radius: var(--r-sm);
+}
+.ads-actions {
+  display: flex;
+  gap: var(--space-2);
+  flex: none;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+/* Narrow screens: stack the row so action buttons don't overflow the card. */
+@media (max-width: 560px) {
+  .ads-item {
+    flex-direction: column;
+  }
+  .ads-actions {
+    inline-size: 100%;
+    justify-content: flex-start;
+  }
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: var(--space-3);
+}
+.stat {
+  text-align: center;
+  padding: var(--space-3);
+  border: var(--border-hairline);
+  border-radius: var(--r-sm);
+}
+.stat-value {
+  font-size: var(--fs-22);
+  font-weight: var(--fw-bold);
+}

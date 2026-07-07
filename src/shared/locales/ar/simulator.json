@@ -1,0 +1,48 @@
+{
+  "title": "محاكي الجولات",
+  "reset": "البدء من جديد",
+  "pickHint": "انقر على الخريطة لتحديد موقع السائح",
+  "originSet": "تم تحديد الموقع — اضبط الجولة أدناه.",
+  "configure": "إعداد",
+  "preference": "نوع الجولة",
+  "prefs": {
+    "TOURIST": "سياحية",
+    "TOURIST_FOOD": "+ طعام",
+    "TOURIST_FOOD_COFFEE": "+ طعام وقهوة"
+  },
+  "stops": "محطات",
+  "suggest": "اقترح جولة",
+  "suggesting": "جارٍ الاقتراح…",
+  "suggestError": "تعذّر اقتراح جولة",
+  "route": "المسار المقترح",
+  "totalKm": "{{km}} كم إجمالاً",
+  "roles": {
+    "TOURIST": "معلم",
+    "FOOD": "طعام",
+    "COFFEE": "قهوة",
+    "ANY": "محطة"
+  },
+  "fromOrigin": "من البداية",
+  "fromPrev": "من السابقة",
+  "mode": {
+    "WALK": "سيراً",
+    "DRIVE": "بالسيارة"
+  },
+  "needDriver": "تحتاج سائقاً؟",
+  "noDrivers": "لا سائقين قريبين",
+  "driversFound": "{{count}} سائق متاح",
+  "driversFound_other": "{{count}} سائقين متاحين",
+  "removeStop": "إزالة المحطة",
+  "requestNewStop": "+ محطة جديدة",
+  "noMoreStops": "لا مزيد من المحطات القريبة",
+  "tourName": "اسم الجولة",
+  "tourNamePlaceholder": "مثال: المدينة صباحاً",
+  "schedule": "مجدولة في",
+  "saveTour": "حفظ كجولة مستقبلية",
+  "tourSaved": "تم حفظ الجولة المستقبلية",
+  "saveError": "تعذّر حفظ الجولة",
+  "savedTours": "الجولات المستقبلية",
+  "noSavedTours": "لا جولات مستقبلية بعد.",
+  "stopCount": "{{count}} محطة",
+  "stopCount_other": "{{count}} محطات"
+}

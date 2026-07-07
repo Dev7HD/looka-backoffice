@@ -12,6 +12,10 @@ import { LedgerPage } from "@/features/ledger/LedgerPage";
 import { DriversPage } from "@/features/drivers/DriversPage";
 import { MediaPage } from "@/features/media/MediaPage";
 import { SettingsPage } from "@/features/settings/SettingsPage";
+import { SimulatorPage } from "@/features/simulator/SimulatorPage";
+import { FulfillmentPage } from "@/features/fulfillment/FulfillmentPage";
+import { AdsPage } from "@/features/ads/AdsPage";
+import { ReportsPage } from "@/features/reports/ReportsPage";
 import { ShowcasePage } from "@/features/showcase/ShowcasePage";
 import type { ReactElement } from "react";
 
@@ -38,6 +42,10 @@ export const router = createBrowserRouter([
           { path: "ledger", element: gate("ledger", <LedgerPage />) },
           { path: "media", element: gate("media", <MediaPage />) },
           { path: "settings", element: gate("settings", <SettingsPage />) },
+          { path: "simulator", element: gate("simulator", <SimulatorPage />) },
+          { path: "fulfillment", element: gate("fulfillment", <FulfillmentPage />) },
+          { path: "ads", element: gate("ads", <AdsPage />) },
+          { path: "reports", element: gate("reports", <ReportsPage />) },
           { path: "design", element: <ShowcasePage /> },
           { path: "*", element: <Navigate to="/" replace /> },
         ],

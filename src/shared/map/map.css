@@ -1,0 +1,46 @@
+/* =============================================================================
+   Geofence editor styling (shared/map).
+   Lives here — not in a feature — because it styles the shared GeofenceMap /
+   SvgGeofenceEditor and third-party Mapbox DOM that utilities can't reach.
+   Tokens only; never hardcode hex / px.
+   ============================================================================= */
+.geofence {
+  inline-size: 100%;
+  block-size: auto;
+  border: var(--border-hairline);
+  border-radius: var(--r-sm);
+  display: block;
+  touch-action: none;
+}
+/* Mapbox / loading adapters need an explicit height (no intrinsic ratio). */
+.geofence--map,
+.geofence--loading {
+  block-size: 360px;
+  overflow: hidden;
+}
+.geofence--loading {
+  background: var(--c-paper);
+}
+/* Keep Mapbox controls on the design radius. */
+.geofence--map .mapboxgl-ctrl-group {
+  border-radius: var(--r-sm);
+}
+.geofence__vertex {
+  fill: var(--c-surface);
+  stroke: var(--c-primary);
+  stroke-width: 2.5;
+  cursor: grab;
+}
+.geofence__vertex:active {
+  cursor: grabbing;
+}
+.geofence__add {
+  fill: var(--c-surface);
+  stroke: var(--c-brass);
+  stroke-width: 1.5;
+  opacity: 0.55;
+  cursor: copy;
+}
+.geofence__add:hover {
+  opacity: 1;
+}

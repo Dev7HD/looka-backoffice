@@ -1,0 +1,17 @@
+{
+  "fees": "Booking fees",
+  "kinds": {
+    "DRIVER_LEG": "Driver leg",
+    "FOOD_STOP": "Food stop",
+    "COFFEE_STOP": "Coffee stop"
+  },
+  "save": "Save",
+  "feeSaved": "Fee updated",
+  "assignments": "Assignments",
+  "tour": "Tour",
+  "kind": "Kind",
+  "partner": "Partner",
+  "fee": "Fee",
+  "status": "Status",
+  "noAssignments": "No assignments yet."
+}

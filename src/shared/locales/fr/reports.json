@@ -1,0 +1,17 @@
+{
+  "openReports": "Signalements ouverts",
+  "empty": "Aucun signalement ouvert.",
+  "partner": "Partenaire",
+  "reasons": {
+    "FRAUD": "Fraude",
+    "SAFETY": "Sécurité",
+    "BEHAVIOR": "Comportement",
+    "OTHER": "Autre"
+  },
+  "actions": {
+    "REVIEWED": "Examiné",
+    "DISMISSED": "Rejeter",
+    "ACTION_TAKEN": "Agir"
+  },
+  "resolved": "Signalement résolu"
+}

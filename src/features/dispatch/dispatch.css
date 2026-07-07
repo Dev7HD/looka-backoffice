@@ -62,7 +62,7 @@
 }
 .live--live {
   color: var(--c-success);
-  background: #e0f0eb;
+  background: var(--c-primary-soft);
 }
 .live--live .live__dot {
   animation: live-pulse 1.4s var(--ease-out) infinite;

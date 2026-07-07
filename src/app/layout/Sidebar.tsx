@@ -5,7 +5,7 @@ import { ROUTE_ROLES } from "@shared/auth/roles";
 import { NAV } from "./nav";
 import "./Sidebar.css";
 
-export function Sidebar() {
+export function Sidebar({ open = false }: { open?: boolean }) {
   const { t } = useTranslation("nav");
   const { hasAny } = useAuth();
   const items = NAV.filter((item) => {
@@ -13,7 +13,7 @@ export function Sidebar() {
     return roles.length === 0 || hasAny(roles);
   });
   return (
-    <aside className="sidebar">
+    <aside className={"sidebar" + (open ? " sidebar--open" : "")}>
       <div className="sidebar__brand">
         <span className="sidebar__mark" aria-hidden="true">
           L
