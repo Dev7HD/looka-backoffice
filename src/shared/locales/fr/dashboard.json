@@ -1,0 +1,56 @@
+{
+  "subtitle": "Votre tableau de bord. Touchez Personnaliser pour le réorganiser.",
+  "editHint": "Déplacez, redimensionnez et ajoutez des widgets. La disposition est enregistrée automatiquement.",
+  "customize": "Personnaliser",
+  "done": "Terminé",
+  "addWidget": "Ajouter un widget",
+  "reset": "Réinitialiser",
+  "library": "Bibliothèque de widgets",
+  "closeLibrary": "Fermer la bibliothèque",
+  "add": "Ajouter",
+  "added": "Ajouté",
+  "removeWidget": "Retirer le widget",
+  "emptyBoard": "Votre tableau de bord est vide",
+  "emptyBoardHint": "Ajoutez des widgets depuis la bibliothèque pour commencer.",
+  "emptyPending": "Aucun partenaire en attente d’approbation.",
+  "points": "pts",
+  "templates": "Modèles",
+  "templatesHint": "Appliquer une disposition prédéfinie. Cela remplace votre tableau actuel.",
+  "closeTemplates": "Fermer les modèles",
+  "apply": "Appliquer",
+  "widgets": {
+    "kpi-active-rides": "Courses actives",
+    "kpi-escrow": "Solde séquestre",
+    "kpi-pending-partners": "Partenaires en attente",
+    "kpi-abandoned": "Abandonnées (24 h)",
+    "chart-rides": "Tendance des courses",
+    "chart-rides-30d": "Tendance des courses (30 j)",
+    "chart-revenue": "Revenus",
+    "chart-outcomes": "Issues des courses",
+    "chart-driver-status": "Statut des chauffeurs",
+    "chart-top-pois": "POI populaires",
+    "list-pending-partners": "Partenaires en attente"
+  },
+  "driver": {
+    "online": "En ligne",
+    "onRide": "En course",
+    "offline": "Hors ligne"
+  },
+  "template": {
+    "overview": { "name": "Vue d’ensemble", "desc": "Indicateurs clés en un coup d’œil" },
+    "operations": { "name": "Opérations", "desc": "Répartition en direct & flotte" },
+    "finance": { "name": "Finance", "desc": "Revenus & séquestre" },
+    "catalog": { "name": "Catalogue", "desc": "POI & validation des partenaires" }
+  },
+  "kpi": {
+    "activeRides": "Courses actives",
+    "escrowBalance": "Solde séquestre",
+    "pendingPartners": "Partenaires en attente",
+    "abandoned24h": "Abandonnées (24 h)"
+  },
+  "outcomes": {
+    "completed": "Terminées",
+    "cancelled": "Annulées",
+    "abandoned": "Abandonnées"
+  }
+}

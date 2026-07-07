@@ -1,0 +1,56 @@
+{
+  "subtitle": "لوحتك. اضغط على تخصيص لإعادة ترتيبها.",
+  "editHint": "اسحب العناصر وغيّر حجمها وأضِف عناصر. يُحفظ التخطيط تلقائيًا.",
+  "customize": "تخصيص",
+  "done": "تم",
+  "addWidget": "إضافة عنصر",
+  "reset": "إعادة تعيين",
+  "library": "مكتبة العناصر",
+  "closeLibrary": "إغلاق المكتبة",
+  "add": "إضافة",
+  "added": "مُضاف",
+  "removeWidget": "إزالة العنصر",
+  "emptyBoard": "لوحتك فارغة",
+  "emptyBoardHint": "أضف عناصر من المكتبة للبدء.",
+  "emptyPending": "لا يوجد شركاء بانتظار الموافقة.",
+  "points": "نقطة",
+  "templates": "القوالب",
+  "templatesHint": "طبّق تخطيطًا جاهزًا. سيحل محل لوحتك الحالية.",
+  "closeTemplates": "إغلاق القوالب",
+  "apply": "تطبيق",
+  "widgets": {
+    "kpi-active-rides": "الرحلات النشطة",
+    "kpi-escrow": "رصيد الضمان",
+    "kpi-pending-partners": "الشركاء المعلقون",
+    "kpi-abandoned": "المتروكة (24 ساعة)",
+    "chart-rides": "اتجاه الرحلات",
+    "chart-rides-30d": "اتجاه الرحلات (30 يومًا)",
+    "chart-revenue": "الإيرادات",
+    "chart-outcomes": "نتائج الرحلات",
+    "chart-driver-status": "حالة السائقين",
+    "chart-top-pois": "أبرز المعالم",
+    "list-pending-partners": "الشركاء المعلقون"
+  },
+  "driver": {
+    "online": "متصل",
+    "onRide": "في رحلة",
+    "offline": "غير متصل"
+  },
+  "template": {
+    "overview": { "name": "نظرة عامة", "desc": "المؤشرات الرئيسية بلمحة" },
+    "operations": { "name": "العمليات", "desc": "الإرسال المباشر والأسطول" },
+    "finance": { "name": "المالية", "desc": "الإيرادات والضمان" },
+    "catalog": { "name": "الكتالوج", "desc": "المعالم والموافقة على الشركاء" }
+  },
+  "kpi": {
+    "activeRides": "الرحلات النشطة",
+    "escrowBalance": "رصيد الضمان",
+    "pendingPartners": "الشركاء المعلقون",
+    "abandoned24h": "المتروكة (24 ساعة)"
+  },
+  "outcomes": {
+    "completed": "مكتملة",
+    "cancelled": "ملغاة",
+    "abandoned": "متروكة"
+  }
+}

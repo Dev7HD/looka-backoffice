@@ -1,0 +1,30 @@
+/* react-grid-layout structural CSS (positioning, drag transitions). */
+@import "react-grid-layout/css/styles.css";
+@import "react-resizable/css/styles.css";
+
+/* Theme RGL internals with design tokens — no hardcoded colors. */
+
+/* Drop-target preview while dragging/resizing. */
+.react-grid-item.react-grid-placeholder {
+  background: var(--c-primary);
+  opacity: 0.16;
+  border-radius: var(--r-md);
+}
+
+/* Lift the item being manipulated above its neighbours. */
+.react-grid-item.react-draggable-dragging,
+.react-grid-item.resizing {
+  z-index: var(--z-dropdown);
+}
+
+/* Recolor the resize handle (default ships a fixed-color PNG). */
+.react-grid-item > .react-resizable-handle {
+  background-image: none;
+}
+.react-grid-item > .react-resizable-handle::after {
+  border-inline-end: 2px solid var(--c-ink-soft);
+  border-block-end: 2px solid var(--c-ink-soft);
+}
+.react-grid-item:hover > .react-resizable-handle::after {
+  border-color: var(--c-primary);
+}

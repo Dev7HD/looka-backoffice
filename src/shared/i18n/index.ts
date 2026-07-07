@@ -19,6 +19,7 @@ import enSimulator from "../locales/en/simulator.json";
 import enFulfillment from "../locales/en/fulfillment.json";
 import enAds from "../locales/en/ads.json";
 import enReports from "../locales/en/reports.json";
+import enDashboard from "../locales/en/dashboard.json";
 import frCommon from "../locales/fr/common.json";
 import frNav from "../locales/fr/nav.json";
 import frPartners from "../locales/fr/partners.json";
@@ -35,6 +36,7 @@ import frSimulator from "../locales/fr/simulator.json";
 import frFulfillment from "../locales/fr/fulfillment.json";
 import frAds from "../locales/fr/ads.json";
 import frReports from "../locales/fr/reports.json";
+import frDashboard from "../locales/fr/dashboard.json";
 import esCommon from "../locales/es/common.json";
 import esNav from "../locales/es/nav.json";
 import esPartners from "../locales/es/partners.json";
@@ -51,6 +53,7 @@ import esSimulator from "../locales/es/simulator.json";
 import esFulfillment from "../locales/es/fulfillment.json";
 import esAds from "../locales/es/ads.json";
 import esReports from "../locales/es/reports.json";
+import esDashboard from "../locales/es/dashboard.json";
 import arCommon from "../locales/ar/common.json";
 import arNav from "../locales/ar/nav.json";
 import arPartners from "../locales/ar/partners.json";
@@ -67,14 +70,15 @@ import arSimulator from "../locales/ar/simulator.json";
 import arFulfillment from "../locales/ar/fulfillment.json";
 import arAds from "../locales/ar/ads.json";
 import arReports from "../locales/ar/reports.json";
+import arDashboard from "../locales/ar/dashboard.json";
 
-export const NAMESPACES = ["common", "nav", "partners", "pois", "auth", "dispatch", "ledger", "drivers", "media", "settings", "errors", "notifications", "simulator", "fulfillment", "ads", "reports"] as const;
+export const NAMESPACES = ["common", "nav", "partners", "pois", "auth", "dispatch", "ledger", "drivers", "media", "settings", "errors", "notifications", "simulator", "fulfillment", "ads", "reports", "dashboard"] as const;
 
 const resources = {
-  en: { common: enCommon, nav: enNav, partners: enPartners, pois: enPois, auth: enAuth, dispatch: enDispatch, ledger: enLedger, drivers: enDrivers, media: enMedia, settings: enSettings, errors: enErrors, notifications: enNotifications, simulator: enSimulator, fulfillment: enFulfillment, ads: enAds, reports: enReports },
-  fr: { common: frCommon, nav: frNav, partners: frPartners, pois: frPois, auth: frAuth, dispatch: frDispatch, ledger: frLedger, drivers: frDrivers, media: frMedia, settings: frSettings, errors: frErrors, notifications: frNotifications, simulator: frSimulator, fulfillment: frFulfillment, ads: frAds, reports: frReports },
-  es: { common: esCommon, nav: esNav, partners: esPartners, pois: esPois, auth: esAuth, dispatch: esDispatch, ledger: esLedger, drivers: esDrivers, media: esMedia, settings: esSettings, errors: esErrors, notifications: esNotifications, simulator: esSimulator, fulfillment: esFulfillment, ads: esAds, reports: esReports },
-  ar: { common: arCommon, nav: arNav, partners: arPartners, pois: arPois, auth: arAuth, dispatch: arDispatch, ledger: arLedger, drivers: arDrivers, media: arMedia, settings: arSettings, errors: arErrors, notifications: arNotifications, simulator: arSimulator, fulfillment: arFulfillment, ads: arAds, reports: arReports },
+  en: { common: enCommon, nav: enNav, partners: enPartners, pois: enPois, auth: enAuth, dispatch: enDispatch, ledger: enLedger, drivers: enDrivers, media: enMedia, settings: enSettings, errors: enErrors, notifications: enNotifications, simulator: enSimulator, fulfillment: enFulfillment, ads: enAds, reports: enReports, dashboard: enDashboard },
+  fr: { common: frCommon, nav: frNav, partners: frPartners, pois: frPois, auth: frAuth, dispatch: frDispatch, ledger: frLedger, drivers: frDrivers, media: frMedia, settings: frSettings, errors: frErrors, notifications: frNotifications, simulator: frSimulator, fulfillment: frFulfillment, ads: frAds, reports: frReports, dashboard: frDashboard },
+  es: { common: esCommon, nav: esNav, partners: esPartners, pois: esPois, auth: esAuth, dispatch: esDispatch, ledger: esLedger, drivers: esDrivers, media: esMedia, settings: esSettings, errors: esErrors, notifications: esNotifications, simulator: esSimulator, fulfillment: esFulfillment, ads: esAds, reports: esReports, dashboard: esDashboard },
+  ar: { common: arCommon, nav: arNav, partners: arPartners, pois: arPois, auth: arAuth, dispatch: arDispatch, ledger: arLedger, drivers: arDrivers, media: arMedia, settings: arSettings, errors: arErrors, notifications: arNotifications, simulator: arSimulator, fulfillment: arFulfillment, ads: arAds, reports: arReports, dashboard: arDashboard },
 } as const;
 
 /** Apply <html lang> + <html dir> for the active locale. */

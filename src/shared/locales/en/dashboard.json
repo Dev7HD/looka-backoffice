@@ -1,0 +1,56 @@
+{
+  "subtitle": "Your dashboard. Tap Customize to rearrange it.",
+  "editHint": "Drag, resize and add widgets. Layout saves automatically.",
+  "customize": "Customize",
+  "done": "Done",
+  "addWidget": "Add widget",
+  "reset": "Reset layout",
+  "library": "Widget library",
+  "closeLibrary": "Close library",
+  "add": "Add",
+  "added": "Added",
+  "removeWidget": "Remove widget",
+  "emptyBoard": "Your dashboard is empty",
+  "emptyBoardHint": "Add widgets from the library to get started.",
+  "emptyPending": "No partners awaiting approval.",
+  "points": "pts",
+  "templates": "Templates",
+  "templatesHint": "Apply a prebuilt layout. This replaces your current board.",
+  "closeTemplates": "Close templates",
+  "apply": "Apply",
+  "widgets": {
+    "kpi-active-rides": "Active rides",
+    "kpi-escrow": "Escrow balance",
+    "kpi-pending-partners": "Pending partners",
+    "kpi-abandoned": "Abandoned (24h)",
+    "chart-rides": "Rides trend",
+    "chart-rides-30d": "Rides trend (30d)",
+    "chart-revenue": "Revenue",
+    "chart-outcomes": "Ride outcomes",
+    "chart-driver-status": "Driver status",
+    "chart-top-pois": "Top POIs",
+    "list-pending-partners": "Pending partners"
+  },
+  "driver": {
+    "online": "Online",
+    "onRide": "On ride",
+    "offline": "Offline"
+  },
+  "template": {
+    "overview": { "name": "Overview", "desc": "Key metrics at a glance" },
+    "operations": { "name": "Operations", "desc": "Live dispatch & fleet" },
+    "finance": { "name": "Finance", "desc": "Revenue & escrow" },
+    "catalog": { "name": "Catalog", "desc": "POIs & partner approvals" }
+  },
+  "kpi": {
+    "activeRides": "Active rides",
+    "escrowBalance": "Escrow balance",
+    "pendingPartners": "Pending partners",
+    "abandoned24h": "Abandoned (24h)"
+  },
+  "outcomes": {
+    "completed": "Completed",
+    "cancelled": "Cancelled",
+    "abandoned": "Abandoned"
+  }
+}

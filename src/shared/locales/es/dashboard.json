@@ -1,0 +1,56 @@
+{
+  "subtitle": "Tu panel. Toca Personalizar para reorganizarlo.",
+  "editHint": "Arrastra, redimensiona y añade widgets. El diseño se guarda automáticamente.",
+  "customize": "Personalizar",
+  "done": "Listo",
+  "addWidget": "Añadir widget",
+  "reset": "Restablecer",
+  "library": "Biblioteca de widgets",
+  "closeLibrary": "Cerrar biblioteca",
+  "add": "Añadir",
+  "added": "Añadido",
+  "removeWidget": "Quitar widget",
+  "emptyBoard": "Tu panel está vacío",
+  "emptyBoardHint": "Añade widgets desde la biblioteca para empezar.",
+  "emptyPending": "No hay socios pendientes de aprobación.",
+  "points": "pts",
+  "templates": "Plantillas",
+  "templatesHint": "Aplica un diseño predefinido. Esto reemplaza tu panel actual.",
+  "closeTemplates": "Cerrar plantillas",
+  "apply": "Aplicar",
+  "widgets": {
+    "kpi-active-rides": "Viajes activos",
+    "kpi-escrow": "Saldo en depósito",
+    "kpi-pending-partners": "Socios pendientes",
+    "kpi-abandoned": "Abandonados (24 h)",
+    "chart-rides": "Tendencia de viajes",
+    "chart-rides-30d": "Tendencia de viajes (30 d)",
+    "chart-revenue": "Ingresos",
+    "chart-outcomes": "Resultados de viajes",
+    "chart-driver-status": "Estado de conductores",
+    "chart-top-pois": "POI destacados",
+    "list-pending-partners": "Socios pendientes"
+  },
+  "driver": {
+    "online": "En línea",
+    "onRide": "En viaje",
+    "offline": "Desconectado"
+  },
+  "template": {
+    "overview": { "name": "Resumen", "desc": "Métricas clave de un vistazo" },
+    "operations": { "name": "Operaciones", "desc": "Despacho en vivo y flota" },
+    "finance": { "name": "Finanzas", "desc": "Ingresos y depósito" },
+    "catalog": { "name": "Catálogo", "desc": "POI y aprobación de socios" }
+  },
+  "kpi": {
+    "activeRides": "Viajes activos",
+    "escrowBalance": "Saldo en depósito",
+    "pendingPartners": "Socios pendientes",
+    "abandoned24h": "Abandonados (24 h)"
+  },
+  "outcomes": {
+    "completed": "Completados",
+    "cancelled": "Cancelados",
+    "abandoned": "Abandonados"
+  }
+}
