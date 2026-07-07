@@ -1,5 +1,5 @@
 import { useEffect, type ReactNode } from "react";
-import { Navigate, Outlet } from "react-router-dom";
+import { Navigate, Outlet, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useAuth } from "./useAuth";
 import type { AppRole } from "./roles";
@@ -12,6 +12,7 @@ function Splash({ label }: { label: string }) {
 export function RequireAuth() {
   const { status, mode, login } = useAuth();
   const { t } = useTranslation("auth");
+  const location = useLocation();
 
   useEffect(() => {
     if (status === "unauthenticated" && mode === "keycloak") login();
@@ -20,11 +21,16 @@ export function RequireAuth() {
   if (status === "loading") return <Splash label={t("loading")} />;
   if (status === "unauthenticated") {
     // Keycloak self-redirects (effect above); mock + backend render the
-    // in-app /login page (persona picker / credential form).
+    // in-app /login page (persona picker / credential form). Remember where
+    // the user was so we can send them back after they sign in again.
     return mode === "keycloak" ? (
       <Splash label={t("redirecting")} />
     ) : (
-      <Navigate to="/login" replace />
+      <Navigate
+        to="/login"
+        replace
+        state={{ from: location.pathname + location.search }}
+      />
     );
   }
   return <Outlet />;

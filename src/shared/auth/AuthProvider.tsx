@@ -53,6 +53,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
   const didInit = useRef(false);
   const refreshTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
+  // Guards against two refreshes racing (scheduled timer vs. focus revalidation),
+  // which token rotation would turn into a spurious 401.
+  const refreshing = useRef(false);
 
   const clearRefresh = () => {
     if (refreshTimer.current) clearTimeout(refreshTimer.current);
@@ -66,6 +69,13 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setStatus("unauthenticated");
   }, []);
 
+  // End the session AND drop the stored tokens — used whenever a refresh fails
+  // (refresh token expired/revoked) so a dead session can't linger or loop.
+  const failSession = useCallback(() => {
+    if (AUTH_MODE === "backend") clearSession();
+    endSession();
+  }, [endSession]);
+
   // Apply a backend session: attach token, decode user, schedule refresh.
   const applySession = useCallback(
     (session: BackendSession) => {
@@ -75,10 +85,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       clearRefresh();
       const delay = Math.max(1000, session.expiresAt - Date.now());
       refreshTimer.current = setTimeout(() => {
-        backendRefresh(session.refreshToken).then(applySession).catch(endSession);
+        if (refreshing.current) return;
+        refreshing.current = true;
+        backendRefresh(session.refreshToken)
+          .then(applySession)
+          .catch(failSession)
+          .finally(() => {
+            refreshing.current = false;
+          });
       }, delay);
     },
-    [endSession]
+    [failSession]
   );
 
   // --- Backend mode -------------------------------------------------------
@@ -93,15 +110,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     if (session.expiresAt > Date.now()) {
       applySession(session);
     } else {
+      refreshing.current = true;
       backendRefresh(session.refreshToken)
         .then(applySession)
-        .catch(() => {
-          clearSession();
-          setStatus("unauthenticated");
+        .catch(failSession)
+        .finally(() => {
+          refreshing.current = false;
         });
     }
     return clearRefresh;
-  }, [applySession]);
+  }, [applySession, failSession]);
 
   // --- Keycloak mode ------------------------------------------------------
   useEffect(() => {
@@ -186,14 +204,37 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     setStatus("unauthenticated");
   }, [endSession]);
 
-  // Bridge backend 401s → force re-login.
+  // Bridge backend 401s (expired/invalid session) → drop tokens + force re-login.
   useEffect(() => {
-    setUnauthorizedHandler(() => {
-      if (AUTH_MODE === "backend") clearSession();
-      endSession();
-    });
+    setUnauthorizedHandler(failSession);
     return () => setUnauthorizedHandler(null);
-  }, [endSession]);
+  }, [failSession]);
+
+  // Backgrounded tabs throttle/skip the scheduled refresh, so a returning user
+  // can be sitting on a dead session. On focus, if the access token has expired,
+  // refresh proactively — or, if the refresh token is gone too, end the session
+  // (→ RequireAuth redirects to /login) instead of waiting for the next 401.
+  useEffect(() => {
+    if (AUTH_MODE !== "backend") return;
+    const revalidate = () => {
+      if (document.visibilityState !== "visible" || refreshing.current) return;
+      const session = loadSession();
+      if (!session || session.expiresAt > Date.now()) return;
+      refreshing.current = true;
+      backendRefresh(session.refreshToken)
+        .then(applySession)
+        .catch(failSession)
+        .finally(() => {
+          refreshing.current = false;
+        });
+    };
+    document.addEventListener("visibilitychange", revalidate);
+    window.addEventListener("focus", revalidate);
+    return () => {
+      document.removeEventListener("visibilitychange", revalidate);
+      window.removeEventListener("focus", revalidate);
+    };
+  }, [applySession, failSession]);
 
   const value = useMemo<AuthContextValue>(
     () => ({

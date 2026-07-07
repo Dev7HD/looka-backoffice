@@ -1,5 +1,5 @@
 import { useState, type FormEvent } from "react";
-import { Navigate } from "react-router-dom";
+import { Navigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Button, Field, Input, PasswordInput } from "@shared/ui";
 import { useAuth } from "@shared/auth/useAuth";
@@ -33,8 +33,13 @@ const PERSONAS: { user: AuthUser; roleKey: string }[] = [
 export function LoginPage() {
   const { t } = useTranslation(["auth", "common"]);
   const { status, mode, login, loginMock } = useAuth();
+  const location = useLocation();
 
-  if (status === "authenticated") return <Navigate to="/" replace />;
+  if (status === "authenticated") {
+    // Return to the page that bounced us here (set by RequireAuth), else home.
+    const from = (location.state as { from?: string } | null)?.from ?? "/";
+    return <Navigate to={from} replace />;
+  }
 
   const body =
     mode === "keycloak" ? (
